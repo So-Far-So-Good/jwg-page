@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="./img/wzy.ico" type="image/x-icon" />
+    <title>充值 - 微转运</title>
+
+    <link rel="stylesheet" href="../../../AllQuote/plug-css/bootstrap/3.3.4.c/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../../AllQuote/page/new-sea/src/sea.css" />
+
+    <script type="text/javascript" src="../../../AllQuote/plug-js/seajs/3.0.0/sea.js"></script>
+    <script type="text/javascript" src="../../../AllQuote/plug-js/seajs/3.0.0/seajs-style.js"></script>
+    <script type="text/javascript" src="../../../AllQuote/plug-js/config/3.0.0/sea-config.js"></script>
+
+    <script type="text/javascript" src="../../../AllQuote/plug-js/jquery/2.1.4/jquery-seajs-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../../AllQuote/plug-css/bootstrap/3.3.4.c/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#onlineTopUp">充值</button>
+
+
+<div class="modal fade bs-example-modal-lg onLine-topUp-content" id="onlineTopUp" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myLargeModalLabel">在线充值</h4>
+        </div>
+        <form id="onlineTopUpFrom">        
+        <div class="modal-body">
+            <!-- 在线充值 -->
+            <div class="onLine-topUp">
+                <div class="t-line t-balance">
+                    <div class="row">
+                       <div class="col-xs-4 t-label">
+                           <label>用户余额:</label> 
+                       </div>
+                       <div class="col-xs-20">
+                           <span class="balance">
+                               ￥-922.19RMB
+                           </span>
+                       </div>
+                    </div>
+                </div>
+                <div class="t-line t-money">
+                    <div class="row">
+                       <div class="col-xs-4 t-label">
+                          <label>充值金额:</label> 
+                       </div>
+                       <div class="col-xs-20 money-line" >
+                            <div class="money-input">
+                              <input type="text" class="form-control topMoney" id="topUpMoney" name="topUpMoney">
+                            </div> 
+                            <span>
+                                人民币
+                            </span> 
+                       </div>
+                   </div>   
+                </div>
+                <div class="t-line">
+                    <div class="row">
+                        <div class="col-xs-20 col-xs-offset-4">
+                             <label class="radio-inline topUp-choose">
+                                 <input type="radio"  id="topUpRadio1" name="topUpRadio" checked="checked" value="0">网银充值</label>
+                             <label class="radio-inline topUp-choose">
+                                 <input type="radio" id="topUpRadio2" name="topUpRadio" value="1">支付宝充值</label>
+                        </div>
+                    </div> 
+                </div>
+                <div class="t-line" id="allBank">
+                    <div class="row">
+                        <div class="col-xs-20 col-xs-offset-4">
+                             <ul class="bank-list">
+                                 <li>
+                                   <label class="radio-inline">
+                                       <input type="radio" class="bank-radio" name="bank" id="WY_radio_ICBC" checked="checked" value="ICBC-NET-B2C" title="工商银行">
+                                       <span class="iw ICBC">
+                                       </span>
+                                   </label>    
+                                 </li>
+                                 
+                                <li>
+                                    <label class="radio-inline">
+                                        <input type="radio" class="bank-radio" name="bank"  id="WY_radio_CMBCHINA"  value="CMBCHINA-NET-B2C" title="招商银行">    
+                                        <span class="iw CMBCHINA"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="radio-inline">
+                                        <input type="radio" class="bank-radio" name="bank"  id="WY_radio_ABC"  value="ABC-NET-B2C" title="农业银行">    
+                                        <span class="iw ABC" ></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="radio-inline">
+                                        <input type="radio" class="bank-radio" name="bank" id="WY_radio_CCB" value="CCB-NET-B2C"  title="建设银行">    
+                                        <span class="iw CCB" ></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="radio-inline">
+                                        <input type="radio" class="bank-radio" name="bank" id="WY_radio_BCCB" value="BCCB-NET-B2C"  title="北京银行">    
+                                        <span class="iw BCCB" ></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="radio-inline">
+                                        <input type="radio" class="bank-radio" name="bank" id="WY_radio_BOCO" value="BOCO-NET-B2C"  title="交通银行">    
+                                        <span class="iw BOCO" ></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="radio-inline">
+                                        <input type="radio" class="bank-radio" name="bank" id="WY_radio_CIB" value="CIB-NET-B2C"  title="兴业银行">    
+                                        <span class="iw CIB" ></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="radio-inline">
+                                        <input type="radio" class="bank-radio" name="bank" id="WY_radio_CMBC" value="CMBC-NET-B2C"  title="中国民生银行">    
+                                        <span class="iw CMBC" ></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="radio-inline">
+                                        <input type="radio" class="bank-radio" name="bank" id="WY_radio_CEB" value="CEB-NET-B2C"  title="中国光大银行">    
+                                        <span class="iw CEB" ></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="radio-inline">
+                                        <input type="radio" class="bank-radio" name="bank" id="WY_radio_BOC" value="BOC-NET-B2C"  title="中国银行">    
+                                        <span class="iw BOC" ></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="radio-inline">
+                                        <input type="radio" class="bank-radio" name="bank" id="WY_radio_ECITIC" value="ECITIC-NET-B2C"  title="中信银行">    
+                                        <span class="iw ECITIC" ></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="radio-inline">
+                                        <input type="radio" class="bank-radio" name="bank" id="WY_radio_SDB" value="SDB-NET-B2C"  title="深圳发展银行">    
+                                        <span class="iw SDB" ></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="radio-inline">
+                                        <input type="radio" class="bank-radio" name="bank" id="WY_radio_GDB" value="GDB-NET-B2C"  title="广发银行">    
+                                        <span class="iw GDB" ></span>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="radio-inline">
+                                        <input type="radio" class="bank-radio" name="bank" id="WY_radio_SPDB" value="SPDB-NET-B2C"  title="浦发银行">    
+                                        <span class="iw SPDB" ></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="radio-inline">
+                                        <input type="radio" class="bank-radio" name="bank" id="WY_radio_POST" value="POST-NET-B2C"  title="中国邮政储蓄银行">    
+                                        <span class="iw POST" ></span>
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label class="radio-inline">
+                                        <input type="radio" class="bank-radio" name="bank" id="WY_radio_HXB" value="HXB-NET-B2C"  title="华夏银行">    
+                                        <span class="iw HXB" ></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="radio-inline">
+                                        <input type="radio" class="bank-radio" name="bank" id="WY_radio_PINGANBANK" value="PINGANBANK-NET-B2C"  title="平安银行">    
+                                        <span class="iw PINGANBANK" ></span>
+                                    </label>
+                                </li>
+                             </ul>
+                             <p class="help-block">银行卡网银支付（信用卡或储蓄卡都可支付、方便、快捷！）</p>    
+                        </div>
+                    </div>
+                </div>         
+                <div class="t-line t-verification">
+                    <div class="row">
+                       <div class="col-xs-4 t-label">
+                          <label>验证码:</label> 
+                       </div>
+                       <div class="col-xs-20 verify-line" >
+                           <div class="verify-input">
+                             <input type="text" class="form-control topMoney" id="topUpCode" name="topUpCode" >
+                           </div>
+                           <span class="verify-img">
+                              <img src="http://192.168.1.120:89/Vcode" data-src="http://192.168.1.120:89/Vcode" onclick="$(this).attr('src',$(this).data('src')+'?'+new Date().getTime())" style="cursor:pointer;" title="看不到验证码?点击重新换一个！"> 
+                           </span> 
+                       </div>
+                   </div>   
+                </div>
+            </div>
+            <!-- 在线充值 -->
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">提交</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+<script type="text/javascript">
+seajs.use("./src/top-up/top-up.js")  
+</script>
+
+
+</body>
+</html>

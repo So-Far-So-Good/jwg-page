@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="./img/wzy.ico" type="image/x-icon" />
+    <title>立即发货 - 微转运</title>
+
+    <link rel="stylesheet" href="../../../AllQuote/plug-css/bootstrap/3.3.4.c/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../../AllQuote/page/new-sea/src/sea.css" />
+
+    <script type="text/javascript" src="../../../AllQuote/plug-js/seajs/3.0.0/sea.js"></script>
+    <script type="text/javascript" src="../../../AllQuote/plug-js/seajs/3.0.0/seajs-style.js"></script>
+    <script type="text/javascript" src="../../../AllQuote/plug-js/config/3.0.0/sea-config.js"></script>
+
+    <script type="text/javascript" src="../../../AllQuote/plug-js/jquery/2.1.4/jquery-seajs-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../../AllQuote/plug-css/bootstrap/3.3.4.c/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+
+<!--head-->
+<!--inform-->
+<!-- <div class="h-inform">
+    <div class="h-mian">
+        <div class="head clearfix">
+            <h3 class="column"> <i class="iconfont">&#xe61d;</i>
+                公告
+            </h3>
+            <a href="javascirpt:void(0)" class="close">X</a>
+        </div>
+        <div class="notice clearfix">
+            <ul>
+                <li>我是公告一我是公告一我是公告一我是公告一我是公告一我是公告一<a href="#" target="_blank">查看详情</a></li>
+            </ul>
+        </div>
+    </div>
+</div> -->
+<!--inform-->
+
+
+<div class="h-head-top">
+    <div class="h-mian clearfix">
+        <div class="h-top-left">
+            <a href="javascript:void(0)" class="clearfix">
+                <i class="iconfont">&#xe61d;</i>
+                网站最新公告 <span>4</span> 条
+            </a>   
+        </div>
+        <div class="h-top-right">
+             <a href="./register.html"> 注册 </a> |
+             <a href="./login.html"> 登陆 </a>
+        </div> 
+         <!-- <div class="h-top-right">
+             <a href="#"> xiaomiao </a> |
+             <a href="#"> 退出 </a>
+        </div>  -->
+    </div>
+</div>
+
+<div class="h-head h-head-bottom">
+    <div class="h-mian clearfix">
+        <div class="hd-logo">
+            <a href="/index.html">
+               <img src="http://placehold.it/220x70" width="220px" height="70px" >   
+            </a>
+        </div>
+        <div class="hd-list">
+            <ul class="clearfix">
+                <li><a href="">首页</a></li>
+                <li><a href="">上传身份证</a></li>
+                <li><a href="">关于微转运</a></li>
+                <li><a href="" class="selected">帮助中心</a></li>                  
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- head -->
+
+
+<!-- 区分 dropoff -->
+<script type="text/javascript">
+var isDropoff = false,  // 是否diff
+    maxInsurance = 6000,   // 保险最大值
+    volumeWeight = 6000;   // 体积重量  
+
+</script>
+<!-- 区分 dropoff -->
+
+
+<div class="operation-page container-fluid">
+    <div class="h-mian h-min-big clearfix">
+         
+         <!-- 立即发货 -->
+         <div class="package-delivery">
+              <dl>
+                  <dt class="title">
+                     填写运单信息 
+                  </dt>
+                  <dd class="d-item">
+                     <h3 class="d-title">
+                         仓库：
+                     </h3> 
+                     <div class="d-content warehouse">
+                         <label class="radio-inline">
+                           <input type="radio" checked="true" name="warehouseRadio"  value="0">波特兰仓库</label>
+                         <label class="radio-inline">
+                           <input type="radio" name="warehouseRadio"  value="1">洛杉矶仓库</label>
+                     </div>  
+                  </dd>
+                  <dd class="d-item">
+                     <h3 class="d-title">
+                         包裹类型：
+                     </h3>  
+                     <div class="d-content package-type">                  
+                         <div class="radio">
+                             <label>
+                                 <input type="radio" name="packType"  value="0" checked="true">                     
+                                 Option one is this and that—be sure to include why it's great
+                             </label>
+                         </div>
+                         <div class="radio">
+                             <label>
+                                 <input type="radio" name="packType"  value="1" >                     
+                                 Option two can be something else and selecting it will deselect option one
+                             </label>
+                         </div>
+                         <div class="radio">
+                             <label>
+                                 <input type="radio" name="packType"  value="2" >                     
+                                 Option one is this and that—be sure to include why it's great
+                             </label>
+                         </div>
+                         <div class="radio">
+                             <label>
+                                 <input type="radio" name="packType"  value="3" >                     
+                                 Option two can be something else and selecting it will deselect option one
+                             </label>
+                         </div>
+                     </div>
+                  </dd>
+                  <dd class="d-item">
+                     <h3 class="d-title">
+                         计费标准：
+                     </h3> 
+                     <div class="d-content billing">
+
+                        <p id="billStandard">(首重费用:￥86.00,首重重量:1Kg,续重费用:￥86.00,续重重量:0.5Kg,合箱费用:￥7.00/箱,进位重量:0.1Kg)</p>   
+
+                     </div>  
+                  </dd>
+                  <dd class="d-item">
+                     <h3 class="d-title">
+                         运单详情：
+                     </h3>   
+                     <div class="d-content particulars">
+                         <!-- 运单单号 -->
+                          <table class="table table-bordered">
+                              <tbody>
+                                  <tr>
+                                      <td width="25%">快递公司：</td>
+                                      <td width="25%"><span class="note">Other</span></td>
+                                      <td width="25%">快件追踪号：</td>
+                                      <td width="25%"><span class="note">SDDDDDDDDDDDDDDDS</span></td>
+                                  </tr>
+                              </tbody>
+                          </table>  
+                         <!-- 运单单号 -->
+
+                         <!-- 物品 --> 
+                         <div id="packageContainer">
+
+                         </div> 
+                         <!-- 物品 -->
+                     </div>
+                  </dd>
+                  <dd class="d-item">
+                     <h3 class="d-title">
+                         服务项目：
+                     </h3>
+                     <div class="d-content serveProject">
+                         <ul>
+                            <li>
+                               <div class="row">
+                                   <div class="col-xs-3">
+                                       <label>打包服务</label>
+                                   </div>
+                                   <div class="col-xs-21">
+                                       <label class="radio-inline">
+                                           <input type="radio" checked="true" name="inlineRadioOptions" id="inlineRadio1" value="option1">原箱转运<span class="note">(产生体积重可能性较高)</span></label>
+                                       <label class="radio-inline">
+                                           <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">内部填充加固￥8.00/箱<span class="note">(普通会员价)</span></label>
+                                   </div>
+                               </div>  
+                            </li>
+                            <li>
+                               <div class="row">
+                                   <div class="col-xs-3">
+                                       <label>包裹操作服务</label>
+                                   </div>
+                                   <div class="col-xs-21">
+                                       <label class="checkbox-inline">
+                                           <input type="checkbox" id="inlineCheckbox1" value="option1">取出宣传资料 （暂时免费）</label>
+                                       <label class="checkbox-inline">
+                                           <input type="checkbox" id="inlineCheckbox2" value="option2">去除发票 （暂时免费）</label>
+                                       <label class="checkbox-inline">
+                                           <input type="checkbox" id="inlineCheckbox3" value="option3">去鞋盒（外包装） （暂时免费）</label>
+                                   </div>
+                               </div>  
+                            </li>
+                            <li>
+                               <div class="row">
+                                   <div class="col-xs-3">
+                                       <label>保险</label>
+                                   </div>
+                                   <div class="col-xs-21">
+                                       <input type="text" class="form-control insurance-input"  name="insurance" id="insurance">￥ (0或者不填写表示不交保险) 丢单保险 请填入实际物品的价值，保险金额会自动按照2.00%计算 ；最高保额6000RMB，保费最低收取10RMB。 了解微转运的理赔规则
+                                   </div>
+                               </div>  
+                            </li>
+                          </ul> 
+                     </div>   
+                  </dd>
+                  <dd class="d-item">
+                     <h3 class="d-title">
+                         发货地址：
+                     </h3>
+                     <div class="d-content sendAddress">
+                         等待完善
+                     </div>   
+                  </dd>
+                  <dd class="d-item">
+                     <h3 class="d-title">
+                         收货地址：
+                     </h3> 
+                     <div class="d-content deliverAddress">
+                         等待完善
+                     </div>    
+                  </dd>
+                  <dd class="d-item">
+                     <h3 class="d-title">
+                         包裹备注：
+                     </h3>
+                     <div class="d-content remark">
+                         <input type="text" class="form-control"  placeholder="请输入备注信息">
+                         <p class="note">此处可合理备注内容，如果有需要仓库在打包时注意的事项，请在此填写说明，我们会尽量满足您的需求!</p>
+                     </div>   
+                  </dd>
+                  <dd class="d-item">
+                     <h3 class="d-title">
+                         包裹计费重量和体积信息：
+                     </h3>
+                     <div class="row">
+                         <div class="col-xs-18">
+                             <div class="d-content weightCount">
+                               <ul>
+                                 <li>
+                                   <div class="row">
+                                     <div class="col-xs-4">
+                                       <label>重量计算方式:</label>
+                                     </div>
+                                     <div class="col-xs-12">
+                                       <label class="radio-inline">
+                                         <input type="radio" name="weightFormula" checked="true" value="0" disabled="disabled">实物重量计算</label>
+                                       <label class="radio-inline">
+                                         <input type="radio" name="weightFormula" value="1" disabled="disabled">体积重量计算</label>
+                                     </div>
+                                   </div>
+                                 </li>
+                                 <li>
+                                   <div class="row">
+                                     <div class="col-xs-4">
+                                       <label>实物重量:</label>
+                                     </div>
+                                     <div class="col-xs-6">
+                                       <input type="text" class="form-control" name="kindWeight"  placeholder="输入物体实际重量"></div>
+                                   </div>
+                                   <div class="row bulkWeight"  >
+                                     <div class="col-xs-4">
+                                       <label>体积重量:</label>
+                                     </div>
+                                     <div class="col-xs-18">
+                                       <div class="rectangle-size">
+                                         <div class="row annotation">
+                                           <div class="col-xs-8">长:</div>
+                                           <div class="col-xs-8">宽:</div>
+                                           <div class="col-xs-8">高:</div>
+                                         </div>
+                                         <div class="row">
+                                           <div class="col-xs-8">
+                                             <input type="text" class="form-control" name="wLong" placeholder="输入物体长"></div>
+                                           <div class="col-xs-8">
+                                             <input type="text" class="form-control" name="wWide" placeholder="输入物体宽"></div>
+                                           <div class="col-xs-8">
+                                             <input type="text" class="form-control" name="wHigh" placeholder="输入物体高"></div>
+                                         </div>
+                                         <p>
+                                           体积 / 6000 =
+                                           <span id="volumeWeight">0</span>
+                                           (体积重量)
+                                         </p>
+                                       </div>
+                                     </div>
+                                   </div>
+                                 </li>
+                                 <li>
+                                   <div class="row">
+                                     <div class="col-xs-4">
+                                       <label>计费重量：</label>
+                                     </div>
+                                     <div class="col-xs-6">
+                                       <input type="text" class="form-control" name="billingWeight" disabled="disabled" placeholder="0.00"></div>
+                                   </div>
+                                   </li>
+                                 </ul>
+                               </div>
+                         </div>
+                         <div class="col-xs-6">
+                              <div class="weight-remark">
+                                  <ul>
+                                    <li>
+                                      实物重量计算： <br>
+                                      实物重量大于等于体积重量  <br>
+                                      计费重量选用实物重量
+                                    </li>
+                                    <li>
+                                      体积重量计算： <br>                              
+                                      实物重量小于体积重量 <br>
+                                      计费重量为 ((体积重量 - 实物重量) / 2) + 实物重量
+                                    </li>
+                                  </ul>
+                              </div>                       
+                         </div>
+                     </div>  
+
+                  </dd>
+              </dl>
+
+              <div clas="from-submit">
+                 <input class="btn btn-success" id="goods-btn" name="goods-btn_name" type="submit" value="提交"> 
+              </div>
+         </div>
+         <!-- 立即发货 -->
+
+    </div>
+</div>    
+
+
+<!--footer-->
+<div class="h-footer">
+    <div class="h-mian clearfix">
+        <div class="fo-contact">
+            <dl>
+                <dt>联系我们</dt>
+                <dd>400-800</dd>
+                <dd>400-800</dd>
+                <dd>400-800</dd>
+            </dl>
+        </div>
+        <div class="fo-email">
+            <dl>
+                <dt>邮件</dt>
+                <dd><a href="mailto:service@birdex.cn">service@birdex.cn</a></dd>
+            </dl>
+        </div>
+        <div class="fo-friendly">
+            <dl>
+                <dt>友情链接</dt>
+                <dd><a href="#">福来</a></dd>
+                <dd><a href="#">福来</a></dd>
+                <dd><a href="#">福来</a></dd>
+            </dl>
+        </div>
+        <div class="fo-logo">
+            <a href="/index.html">
+                <img src="http://placehold.it/220x70" width="220px" height="70px" ></a>
+        </div>
+    </div>
+    <p class="brand-register">
+        Copyright @ 2011-2015 美国微转运速递, All Rights Reserved. 沪ICP备15020429号-2
+    </p>
+</div>
+<!--footer-->
+
+<script type="text/javascript">
+seajs.use("./src/shipments/shipments.js")  
+</script>
+
+
+</body>
+</html>

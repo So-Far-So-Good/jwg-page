@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="./img/wzy.ico" type="image/x-icon" />
+    <title>添加新包裹 - 微转运</title>
+
+    <link rel="stylesheet" href="../../../AllQuote/plug-css/bootstrap/3.3.4.c/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../../AllQuote/page/new-sea/src/sea.css" />
+
+    <script type="text/javascript" src="../../../AllQuote/plug-js/seajs/3.0.0/sea.js"></script>
+    <script type="text/javascript" src="../../../AllQuote/plug-js/seajs/3.0.0/seajs-style.js"></script>
+    <script type="text/javascript" src="../../../AllQuote/plug-js/config/3.0.0/sea-config.js"></script>
+
+    <script type="text/javascript" src="../../../AllQuote/plug-js/jquery/2.1.4/jquery-seajs-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../../AllQuote/plug-css/bootstrap/3.3.4.c/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+
+<!--head-->
+<!--inform-->
+<!-- <div class="h-inform">
+    <div class="h-mian">
+        <div class="head clearfix">
+            <h3 class="column"> <i class="iconfont">&#xe61d;</i>
+                公告
+            </h3>
+            <a href="javascirpt:void(0)" class="close">X</a>
+        </div>
+        <div class="notice clearfix">
+            <ul>
+                <li>我是公告一我是公告一我是公告一我是公告一我是公告一我是公告一<a href="#" target="_blank">查看详情</a></li>
+            </ul>
+        </div>
+    </div>
+</div> -->
+<!--inform-->
+
+
+<div class="h-head-top">
+    <div class="h-mian clearfix">
+        <div class="h-top-left">
+            <a href="javascript:void(0)" class="clearfix">
+                <i class="iconfont">&#xe61d;</i>
+                网站最新公告 <span>4</span> 条
+            </a>   
+        </div>
+        <div class="h-top-right">
+             <a href="./register.html"> 注册 </a> |
+             <a href="./login.html"> 登陆 </a>
+        </div> 
+         <!-- <div class="h-top-right">
+             <a href="#"> xiaomiao </a> |
+             <a href="#"> 退出 </a>
+        </div>  -->
+    </div>
+</div>
+
+<div class="h-head h-head-bottom">
+    <div class="h-mian clearfix">
+        <div class="hd-logo">
+            <a href="/index.html">
+               <img src="http://placehold.it/220x70" width="220px" height="70px" >   
+            </a>
+        </div>
+        <div class="hd-list">
+            <ul class="clearfix">
+                <li><a href="">首页</a></li>
+                <li><a href="">上传身份证</a></li>
+                <li><a href="">关于微转运</a></li>
+                <li><a href="" class="selected">帮助中心</a></li>                  
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- head -->
+
+
+
+<div class="operation-page container-fluid">
+    <div class="h-mian h-min-big clearfix">
+         
+        <!--新包裹 填写-->
+        <div class="newPackage-write">
+              <dl>
+                  <dt class="title">
+                      填写入库包裹信息
+
+                      <button type="button" class="btn btn-primary">DropOff订单点击添加</button>
+                  </dt>
+                  <dd class="newPackage-annotation">
+                      <p class="p-1">“小包直邮件”不可清关物品：<br>
+                         国际奢侈品牌（如LV,爱马仕，阿玛尼，普拉达，迪奥等）、名牌手表、奶粉、手机、笔记本电脑、平板电脑、人参、花旗参、西洋参、海参、鱼翅、燕窝、电脑配件、相机及镜头、bose音箱、医疗用品、药物类、汽车配件、易燃易爆危险品、易腐蚀品、管制刀具、毒品、军火、文物古玩、有价证券、国家货币、贵重金银首饰，钻石，海关明文规定禁运物品；  
+                      </p>
+                      <p class="p-2">注意：如您的物品属于以上商品，请在发货时不要选择“小包直邮件”，对应选择其他包裹类型发货即可；</p>
+                  </dd>
+                  <dd class="newPackage-factory">
+                      <ul>
+                          <li>
+                             <div class="row">
+                                 <div class="col-xs-4 l-label">
+                                     <label>选择仓库:</label>
+                                 </div>
+                                 <div class="col-xs-8">
+                                     <label class="radio-inline">
+                                             <input type="radio" checked="true" name="warehouseRadio"  value="0">波特兰仓库</label>
+                                     <label class="radio-inline">
+                                             <input type="radio" name="warehouseRadio"  value="1">洛杉矶仓库</label>
+                                 </div>
+                                 <div class="col-xs-8">
+
+                                 </div>
+                             </div>  
+                          </li>
+                          <li>
+                             <div class="row">
+                                 <div class="col-xs-4 l-label">
+                                     <label>运单类型:</label>
+                                 </div>
+                                 <div class="col-xs-8">
+                                     <select class="form-control" id="waybillType">
+                                          <option value="2">UPS</option>
+                                          <option value="3">ONTRAC</option>
+                                          <option value="4">USPS</option>
+                                          <option value="5">FedEx</option>
+                                          <option value="6">DHL</option>
+                                          <option value="7">Other</option>
+                                          <option value="13">Amazon</option>
+                                     </select>
+                                 </div>
+                             </div> 
+                             <div class="row">
+                                 <div class="col-xs-20 col-xs-offset-4">
+                                    <span class="p-annotation"> ( *必选项，请选择正确的“快递公司”，如没有您要选择的快递公司请选“Other”)
+                                    </span>
+                                 </div>
+                             </div> 
+                          </li>
+                          <li>
+                             <div class="row">
+                                 <div class="col-xs-4 l-label">
+                                     <label>快件追踪号:</label>
+                                 </div>
+                                 <div class="col-xs-8">
+                                     <input type="text" class="form-control" id="fastFreight" placeholder="请输入快件追踪号">
+                                 </div>
+                                 <div class="col-xs-12 fast-error">
+                                     <p id="fastFreight-error" class="sea-error"></p>
+                                 </div>
+                             </div> 
+                             <div class="row">
+                                 <div class="col-xs-20 col-xs-offset-4">
+                                     <span class="p-annotation">
+                                     (*必填项，请填写商家提供的快件追踪号，或者您发货到我们仓库的快件追踪号)
+                                     </span>
+                                 </div>
+                             </div>  
+                          </li>
+                          <li>
+                             <div class="row">
+                                 <div class="col-xs-4 l-label">
+                                     <label>包裹备注:</label>
+                                 </div>
+                                 <div class="col-xs-8">
+                                     <input type="text" class="form-control"  >
+                                 </div>
+                             </div>  
+                             <div class="row">
+                                 <div class="col-xs-20 col-xs-offset-4">
+                                    <span class="p-annotation">
+                                     ( 如果有需要仓库在收货时注意的事项，请在此填写说明！)
+                                    </span> 
+                                 </div>
+                             </div> 
+                          </li>
+                          <li>
+                             <div class="row">
+                                 <div class="col-xs-4 l-label">
+                                     <label>包裹清点内件:</label>
+                                 </div>
+                                 <div class="col-xs-20">
+                                         <label>
+                                            <input type="checkbox" value="">                                         
+                                            盘点商品数量  
+                                         </label>
+                                         <span class="p-annotation">（此项<a href="">服务收费</a>,按 0.50元/件 收费）</span>
+                                 </div>
+                             </div>  
+                          </li>
+                          <li>
+                             <div class="row">
+                                 <div class="col-xs-4 l-label">
+                                     <label>拍照服务:</label>
+                                 </div>
+                                 <div class="col-xs-20">
+                                         <label>
+                                            <input type="checkbox" value="">                                         
+                                            包裹内件详细照片 
+                                         </label>
+                                         <span class="p-annotation">（此项<a href="">服务收费</a>,按 8.00元/包裹 收费，最多提供3张照片；）</span>
+                                 </div>
+                             </div>  
+                          </li>
+                      </ul>
+                  </dd>
+              </dl>
+
+              
+              <!-- 包裹商品信息 -->
+              <div id="packageContainer">
+
+              </div>
+
+              <!-- <div class="package-goods-container">
+                   <div class="title">
+                        包裹商品信息
+                        <button type="button" class="btn btn-primary">添加商品</button>
+                   </div>
+                   <div class="package-goods-list">
+                        <div class="annotation">
+                             <div class="package-box clearfix">
+                                  <div class="box-1">
+                                      物品名称(中文)
+                                  </div> 
+                                  <div class="box-2">
+                                      物品描述(可空)
+                                  </div> 
+                                  <div class="box-3">
+                                      类别
+                                  </div> 
+                                  <div class="box-4">
+                                      品牌(英文)
+                                  </div> 
+                                  <div class="box-5">
+                                      单价（RMB）
+                                  </div> 
+                                  <div class="box-6">
+                                      物品数量
+                                  </div> 
+                                  <div class="box-7">
+                                      操作
+                                  </div> 
+                             </div>
+                        </div>
+                        <div class="package-list">
+                             <div class="package-item clearfix">
+                                  <div class="p-box box-1">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                  </div> 
+                                  <div class="p-box box-2">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                  </div> 
+                                  <div class="p-box box-3">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                  </div> 
+                                  <div class="p-box box-4">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                  </div> 
+                                  <div class="p-box box-5">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                  </div> 
+                                  <div class="p-box box-6">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                  </div> 
+                                  <div class="p-box box-7">
+                                      <a href="">删除</a>
+                                  </div> 
+                             </div>
+                             <div class="package-item clearfix">
+                                  <div class="p-box box-1">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                  </div> 
+                                  <div class="p-box box-2">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                  </div> 
+                                  <div class="p-box box-3">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                  </div> 
+                                  <div class="p-box box-4">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                  </div> 
+                                  <div class="p-box box-5">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                  </div> 
+                                  <div class="p-box box-6">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                  </div> 
+                                  <div class="p-box box-7">
+                                      <a href="">删除</a>
+                                  </div> 
+                             </div>
+                             <div class="package-item clearfix">
+                                  <div class="p-box box-1">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                  </div> 
+                                  <div class="p-box box-2">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                  </div> 
+                                  <div class="p-box box-3">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                  </div> 
+                                  <div class="p-box box-4">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                  </div> 
+                                  <div class="p-box box-5">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                  </div> 
+                                  <div class="p-box box-6">
+                                      <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                  </div> 
+                                  <div class="p-box box-7">
+                                      <a href="">删除</a>
+                                  </div> 
+                             </div>
+                        </div>
+                   </div>
+              </div> -->
+              <!-- 包裹商品信息 -->
+
+              <div class="package-operation">
+                   <button type="button" class="btn btn-success">立即发货</button>
+                   <button type="button" class="btn btn-primary">等待合箱</button>
+              </div>
+         </div>  
+         <!--新包裹 填写--> 
+
+    </div>
+</div>        
+
+
+
+<!--footer-->
+<div class="h-footer">
+    <div class="h-mian clearfix">
+        <div class="fo-contact">
+            <dl>
+                <dt>联系我们</dt>
+                <dd>400-800</dd>
+                <dd>400-800</dd>
+                <dd>400-800</dd>
+            </dl>
+        </div>
+        <div class="fo-email">
+            <dl>
+                <dt>邮件</dt>
+                <dd><a href="mailto:service@birdex.cn">service@birdex.cn</a></dd>
+            </dl>
+        </div>
+        <div class="fo-friendly">
+            <dl>
+                <dt>友情链接</dt>
+                <dd><a href="#">福来</a></dd>
+                <dd><a href="#">福来</a></dd>
+                <dd><a href="#">福来</a></dd>
+            </dl>
+        </div>
+        <div class="fo-logo">
+            <a href="/index.html">
+                <img src="http://placehold.it/220x70" width="220px" height="70px" ></a>
+        </div>
+    </div>
+    <p class="brand-register">
+        Copyright @ 2011-2015 美国微转运速递, All Rights Reserved. 沪ICP备15020429号-2
+    </p>
+</div>
+<!--footer-->
+
+<script type="text/javascript">
+seajs.use("./src/newPackage/newPackage.js")  
+</script>
+
+
+</body>
+</html>

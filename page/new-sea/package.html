@@ -1,0 +1,671 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="./img/wzy.ico" type="image/x-icon" />
+    <title>包裹管理 - 微转运</title>
+
+    <link rel="stylesheet" href="../../../AllQuote/plug-css/bootstrap/3.3.4.c/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../../AllQuote/page/new-sea/src/sea.css" />
+
+    <script type="text/javascript" src="../../../AllQuote/plug-js/seajs/3.0.0/sea.js"></script>
+    <script type="text/javascript" src="../../../AllQuote/plug-js/seajs/3.0.0/seajs-style.js"></script>
+    <script type="text/javascript" src="../../../AllQuote/plug-js/config/3.0.0/sea-config.js"></script>
+
+    <script type="text/javascript" src="../../../AllQuote/plug-js/jquery/2.1.4/jquery-seajs-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../../AllQuote/plug-css/bootstrap/3.3.4.c/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+<!--head-->
+<!--inform-->
+<!-- <div class="h-inform">
+    <div class="h-mian">
+        <div class="head clearfix">
+            <h3 class="column"> <i class="iconfont">&#xe61d;</i>
+                公告
+            </h3>
+            <a href="javascirpt:void(0)" class="close">X</a>
+        </div>
+        <div class="notice clearfix">
+            <ul>
+                <li>我是公告一我是公告一我是公告一我是公告一我是公告一我是公告一<a href="#" target="_blank">查看详情</a></li>
+            </ul>
+        </div>
+    </div>
+</div> -->
+<!--inform-->
+
+
+<div class="h-head-top">
+    <div class="h-mian clearfix">
+        <div class="h-top-left">
+            <a href="javascript:void(0)" class="clearfix">
+                <i class="iconfont">&#xe61d;</i>
+                网站最新公告 <span>4</span> 条
+            </a>   
+        </div>
+        <div class="h-top-right">
+             <a href="./register.html"> 注册 </a> |
+             <a href="./login.html"> 登陆 </a>
+        </div> 
+         <!-- <div class="h-top-right">
+             <a href="#"> xiaomiao </a> |
+             <a href="#"> 退出 </a>
+        </div>  -->
+    </div>
+</div>
+
+<div class="h-head h-head-bottom">
+    <div class="h-mian clearfix">
+        <div class="hd-logo">
+            <a href="/index.html">
+               <img src="http://placehold.it/220x70" width="220px" height="70px" >   
+            </a>
+        </div>
+        <div class="hd-list">
+            <ul class="clearfix">
+                <li><a href="">首页</a></li>
+                <li><a href="">上传身份证</a></li>
+                <li><a href="">关于微转运</a></li>
+                <li><a href="" class="selected">帮助中心</a></li>                  
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- head -->
+
+
+<div class="operation-page container-fluid">
+
+    <div class="h-mian clearfix">
+        <div class="op-left">
+            <!--用户信息-->
+            <div class="use-inf">
+                <p class="name">xiaowang</p>
+                <p class="grade">砖石VIP</p>
+                <p class="message">留言</p>
+            </div>
+            <!--快速进入-->
+            <div class="quick-access">
+                <ul class="clearfix">
+                    <li class="q-1"> <i class="iconfont">&#xe601;</i>
+                        <span class="label">0.00</span>
+                        <a href="#">充值</a>
+                    </li>
+                    <li class="q-2"> <i class="iconfont">&#xe601;</i>
+                        <span class="label">0.00</span>
+                        <a href="#">优惠券</a>
+                    </li>
+                </ul>
+            </div>
+            <!--导航模块-->
+            <div class="nav-link">
+                <ul>
+                    <li class="n-1">
+                        <a href="#">
+                            <i class="iconfont">&#xe601;</i>
+                            我的包裹管理
+                        </a>
+                    </li>
+                    <li class="n-2">
+                        <a href="#">
+                            <i class="iconfont">&#xe601;</i>
+                            海外仓库地址
+                        </a>
+                    </li>
+                    <li class="n-3">
+                        <a href="#">
+                            <i class="iconfont">&#xe601;</i>
+                            我的账户信息
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="op-right">
+
+            <!--  包裹管理 -->
+            <div class="package-manage">
+                 <dl>
+                     <dt class="title">
+                         包裹管理
+                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myCompensation">新包裹+</button>
+                     </dt>
+                     <dd>
+                       <!-- 筛选条件 -->                       
+                       <div class="screen-package">
+                           <div class="row">
+                               <div class="col-xs-4">
+                                   <label>搜索关键字</label>
+                               </div>
+                               <div class="col-xs-14">
+                                   <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe"></div>
+                               <div class="col-xs-6">
+                                   <button type="button" class="btn btn-primary" >搜索</button>
+                               </div>    
+                           </div>
+                           <div class="row">
+                               <div class="col-xs-20 col-xs-offset-4">
+                                   <p class="help-block">搜索关键字可以输入：入库预报单运单号、收货人、手机号、出库发货单号、国内转运单号 多个关键字用空格分开</p>
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="col-xs-4">
+                                   <label>运单状态</label>
+                               </div>
+                               <div class="col-xs-14">
+                                   <div class="btn-group" data-toggle="buttons">
+                                       <label class="btn btn-primary active">
+                                           <input type="radio" name="options" id="option1" autocomplete="off" checked="">待处理包裹</label>
+                                       <label class="btn btn-primary">
+                                           <input type="radio" name="options" id="option2" autocomplete="off">转运中</label>
+                                       <label class="btn btn-primary">
+                                           <input type="radio" name="options" id="option3" autocomplete="off">已作废</label>
+                                       <label class="btn btn-primary">
+                                           <input type="radio" name="options" id="option3" autocomplete="off">全部包裹</label>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                       <!-- 筛选条件 -->  
+
+                        <!-- 合箱 -->
+                        <div class="package-combine">
+                            <button type="button" class="btn btn-success" >勾选需要合箱的包裹，并执行发货</button>
+                        </div>
+                        <!-- 合箱 -->
+
+                        <!-- 商品列表 -->
+                        <div class="package-list">
+                             <!-- 注释 -->
+                             <div class="annotation">
+                                  <div class="package-box clearfix">
+                                       <div class="box-1">
+                                           商品名称 
+                                       </div>
+                                       <div class="box-2">
+                                           申报类别
+                                       </div>
+                                       <div class="box-3">
+                                           单价($)
+                                       </div>
+                                       <div class="box-4">
+                                           数量
+                                       </div>
+                                       <div class="box-5">
+                                           合计/增值服务
+                                       </div>
+                                       <div class="box-6">
+                                           运费
+                                       </div>
+                                  </div>     
+                             </div>
+                             <!-- 注释 -->
+
+
+                             <div class="package">
+
+                                  <div class="package-item">
+                                       <div class="p-head">
+                                           <span class="combine">
+                                              <input type="checkbox" value="">
+                                           </span>
+                                           <span class="label label-success">已填写运单信息</span>
+                                           所属仓库：波特兰仓库  更新时间：2015/6/23 18:06:39
+                                           <span class="warning">
+                                             [包裹异常请查看]
+                                             <a href="/msg/msgDetail/104" class="btn btn-danger" target="_blank">查看情况</a>
+                                           </span>
+
+                                           <a href="javascript:void(0)" class="operate package-more-info" data-more="false">[查看物品详情]</a>
+                                       </div>
+                                       <div class="p-odd-list">
+                                            <ul>
+                                               <li>
+                                                 <span class="numbers">单号: SSSSSSDDDDDFFFF</span>
+                                                 <span class="state">状态: 等待入库</span>
+                                              
+                                                 <a href="" class="operate">[查看]</a>
+                                                 <a href="" class="operate">[撤销]</a>
+                                                 <a href="" class="operate">[认领]</a>
+                                                 <a href="" class="operate">[取消合箱]</a>
+                                                 <a href="" class="operate">[申请退货]</a>
+                                                 <a href="" class="operate">[我要发货]</a>
+                                                 <a href="" class="operate">[修改]</a>
+                                                 <a href="" class="operate">[删除]</a>                                                
+                                               </li>
+                                              
+                                             </ul> 
+                                       </div>
+                                       <div class="p-inf clearfix">
+                                            <div class="package-goods">
+                                                 <ul>
+                                                   <li class="package-box clearfix">
+                                                     <div class="box-1">
+                                                        搜索
+                                                     </div>
+                                                     <div class="box-2">
+                                                        内衣
+                                                     </div>
+                                                     <div class="box-3">
+                                                        2.00 (￥)
+                                                     </div>
+                                                     <div class="box-4">
+                                                        1
+                                                     </div> 
+                                                   </li>
+                                              
+                                                 </ul>
+                                            </div>
+                                            <div class="package-price">
+                                                  <table class="table table-bordered price-inf">
+                                                    <tbody>
+                                                      <tr>
+                                                        <th class="th-1 p-title topNo">总包裹重量(Kg)</th>
+                                                        <td class="th-2 topNo">0</td>
+                                                        <th class="th-3 p-title topNo rightNo">转运总费用(￥)</th>
+                                                      </tr>
+                                                      <tr>
+                                                        <th class="p-title">运费(￥)</th>
+                                                        <td>0</td>
+                                                        <td class="rightNo" rowspan="3">0</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <th class="p-title">增值服务</th>
+                                                        <td>0</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <th class="p-title">关税费用(￥)</th>
+                                                        <td>0</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td class="rightNo bottomNo" style="text-align: left;" colspan="3">
+                                                         <span class="receive-address">
+                                                            <a href="" title="修改地址">
+                                                              收货地址
+                                                            </a>
+                                                            <div class="r-address">
+                                                              <p>得得得 15267124528 中国 山东省 临沂市 平邑县 所得税单身的的的顶顶顶顶顶    311400</p>
+                                                            </div>
+                                                          </span>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                            </div>
+                                       </div>
+                                       <div class="p-state-list">
+                                            <ul>
+                                              <li>
+                                                 <span class="numbers">
+                                                   入库预报单号:
+                                                    <a href="">
+                                                       20150605009
+                                                    </a>
+                                                 </span>
+                                                 <span class="state">
+                                                   状态: 待打包                                           
+                                                 </span>
+                                                 <span class="warehouse">
+                                                    收货时间：2015/6/5 10:28:09
+                                                 </span>
+                                                 <span class="warning">
+                                                   [包裹异常请查看]
+                                                   <a href="" class="btn btn-danger" target="_blank">查看情况</a>
+                                                 </span>
+                                              </li>                                             
+                                            </ul>
+                                       </div> 
+                                  </div> 
+                               
+
+                                  <div class="package-item">
+                                       <div class="p-head">
+                                           <span class="label label-primary">目前包裹已合箱</span>
+                                           所属仓库：波特兰仓库  更新时间：2015/6/23 18:06:39
+                                           <span class="warning">
+                                             [包裹异常请查看]
+                                             <a href="/msg/msgDetail/104" class="btn btn-danger" target="_blank">查看情况</a>
+                                           </span>
+
+                                           <a href="javascript:void(0)" class="operate package-more-info" data-more="false">[查看物品详情]</a>
+                                       </div>
+                                       <div class="p-odd-list">
+                                            <ul>
+                                               <li>
+                                                 <span class="numbers">单号: SSSSSSDDDDDFFFF</span>
+                                                 <span class="state">状态: 等待入库</span>
+                                              
+                                                 <a href="javascript:void(0)" class="operate package-more" data-more="false">[更多]</a>
+                                                 <a href="" class="operate">[查看]</a>
+                                                 <a href="" class="operate">[撤销]</a>
+                                                 <a href="" class="operate">[认领]</a>
+                                                 <a href="" class="operate">[取消合箱]</a>
+                                                 <a href="" class="operate">[申请退货]</a>
+                                                 <a href="" class="operate">[我要发货]</a>
+                                                 <a href="" class="operate">[修改]</a>
+                                                 <a href="" class="operate">[删除]</a>                                                
+                                               </li>
+                                               <li class="pack-hide">
+                                                 <span class="numbers">单号: SSSSSSDDDDDFFFF</span>
+                                                 <span class="state">状态: 等待入库</span>
+                                           
+
+                                                 <a href="" class="operate">[查看]</a>
+                                                 <a href="" class="operate">[撤销]</a>
+                                                 <a href="" class="operate">[认领]</a>
+                                                 <a href="" class="operate">[取消合箱]</a>
+                                                 <a href="" class="operate">[申请退货]</a>
+                                                 <a href="" class="operate">[我要发货]</a>
+                                                 <a href="" class="operate">[修改]</a>
+                                                 <a href="" class="operate">[删除]</a>
+                                               </li>
+                                               <li class="pack-hide">
+                                                 <span class="numbers">单号: SSSSSSDDDDDFFFF</span>
+                                                 <span class="state">状态: 等待入库</span>
+                                                
+
+                                                 <a href="" class="operate">[查看]</a>
+                                                 <a href="" class="operate">[撤销]</a>
+                                                 <a href="" class="operate">[认领]</a>
+                                                 <a href="" class="operate">[取消合箱]</a>
+                                                 <a href="" class="operate">[申请退货]</a>
+                                                 <a href="" class="operate">[我要发货]</a>
+                                                 <a href="" class="operate">[修改]</a>
+                                                 <a href="" class="operate">[删除]</a>
+                                               </li>
+                                             </ul> 
+                                       </div>
+                                       <div class="p-inf clearfix">
+                                            <div class="package-goods">
+                                                 <ul>
+                                                   <li class="package-box clearfix">
+                                                     <div class="box-1">
+                                                        搜索
+                                                     </div>
+                                                     <div class="box-2">
+                                                        内衣
+                                                     </div>
+                                                     <div class="box-3">
+                                                        2.00 (￥)
+                                                     </div>
+                                                     <div class="box-4">
+                                                        1
+                                                     </div> 
+                                                   </li>
+                                                   <li class="package-box clearfix">
+                                                     <div class="box-1">
+                                                        搜索
+                                                     </div>
+                                                     <div class="box-2">
+                                                        内衣
+                                                     </div>
+                                                     <div class="box-3">
+                                                        2.00 (￥)
+                                                     </div>
+                                                     <div class="box-4">
+                                                        1
+                                                     </div> 
+                                                   </li>
+                                                   <li class="package-box clearfix">
+                                                     <div class="box-1">
+                                                        搜索
+                                                     </div>
+                                                     <div class="box-2">
+                                                        内衣
+                                                     </div>
+                                                     <div class="box-3">
+                                                        2.00 (￥)
+                                                     </div>
+                                                     <div class="box-4">
+                                                        1
+                                                     </div> 
+                                                   </li>
+                                                   <li class="package-box clearfix">
+                                                     <div class="box-1">
+                                                        搜索
+                                                     </div>
+                                                     <div class="box-2">
+                                                        内衣
+                                                     </div>
+                                                     <div class="box-3">
+                                                        2.00 (￥)
+                                                     </div>
+                                                     <div class="box-4">
+                                                        1
+                                                     </div> 
+                                                   </li>
+                                                   <li class="package-box clearfix">
+                                                     <div class="box-1">
+                                                        搜索
+                                                     </div>
+                                                     <div class="box-2">
+                                                        内衣
+                                                     </div>
+                                                     <div class="box-3">
+                                                        2.00 (￥)
+                                                     </div>
+                                                     <div class="box-4">
+                                                        1
+                                                     </div> 
+                                                   </li>
+                                                   <li class="package-box clearfix">
+                                                     <div class="box-1">
+                                                        搜索
+                                                     </div>
+                                                     <div class="box-2">
+                                                        内衣
+                                                     </div>
+                                                     <div class="box-3">
+                                                        2.00 (￥)
+                                                     </div>
+                                                     <div class="box-4">
+                                                        1
+                                                     </div> 
+                                                   </li>
+                                                   <li class="package-box clearfix">
+                                                     <div class="box-1">
+                                                        搜索
+                                                     </div>
+                                                     <div class="box-2">
+                                                        内衣
+                                                     </div>
+                                                     <div class="box-3">
+                                                        2.00 (￥)
+                                                     </div>
+                                                     <div class="box-4">
+                                                        1
+                                                     </div> 
+                                                   </li>
+                                                   <li class="package-box clearfix">
+                                                     <div class="box-1">
+                                                        搜索
+                                                     </div>
+                                                     <div class="box-2">
+                                                        内衣
+                                                     </div>
+                                                     <div class="box-3">
+                                                        2.00 (￥)
+                                                     </div>
+                                                     <div class="box-4">
+                                                        1
+                                                     </div> 
+                                                   </li>
+                                                   <li class="package-box clearfix">
+                                                     <div class="box-1">
+                                                        搜索
+                                                     </div>
+                                                     <div class="box-2">
+                                                        内衣
+                                                     </div>
+                                                     <div class="box-3">
+                                                        2.00 (￥)
+                                                     </div>
+                                                     <div class="box-4">
+                                                        1
+                                                     </div> 
+                                                   </li>
+                                                 </ul>
+                                            </div>
+                                            <div class="package-price">
+                                                  <table class="table table-bordered price-inf">
+                                                    <tbody>
+                                                      <tr>
+                                                        <th class="th-1 p-title topNo">总包裹重量(Kg)</th>
+                                                        <td class="th-2 topNo">0</td>
+                                                        <th class="th-3 p-title topNo rightNo">转运总费用(￥)</th>
+                                                      </tr>
+                                                      <tr>
+                                                        <th class="p-title">运费(￥)</th>
+                                                        <td>0</td>
+                                                        <td class="rightNo" rowspan="3">0</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <th class="p-title">增值服务</th>
+                                                        <td>0</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <th class="p-title">关税费用(￥)</th>
+                                                        <td>0</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td class="rightNo bottomNo" style="text-align: left;" colspan="3">
+                                                         <span class="receive-address">
+                                                            <a href="" title="修改地址">
+                                                              收货地址
+                                                            </a>
+                                                            <div class="r-address">
+                                                              <p>得得得 15267124528 中国 山东省 临沂市 平邑县 所得税单身的的的顶顶顶顶顶    311400</p>
+                                                            </div>
+                                                          </span>
+                                                        </td>
+                                                      </tr>
+                                                    </tbody>
+                                                  </table>
+                                            </div>
+                                       </div>
+                                       <div class="p-state-list">
+                                            <ul>
+                                              <li>
+                                                 <span class="numbers">
+                                                   入库预报单号:
+                                                    <a href="">
+                                                       20150605009
+                                                    </a>
+                                                 </span>
+                                                 <span class="state">
+                                                   状态: 待打包                                           
+                                                 </span>
+                                                 <span class="warehouse">
+                                                    收货时间：2015/6/5 10:28:09
+                                                 </span>
+                                                 <span class="warning">
+                                                   [包裹异常请查看]
+                                                   <a href="" class="btn btn-danger" target="_blank">查看情况</a>
+                                                 </span>
+
+                                                 <a href="javascript:void(0)" class="operate package-more" data-more="false">[更多]</a>
+                                              </li>
+                                              <li class="pack-hide">
+                                                 <span class="numbers">
+                                                   入库预报单号:
+                                                    <a href="">
+                                                       20150605009
+                                                    </a>
+                                                 </span>
+                                                 <span class="state">
+                                                   状态: 待打包                                           
+                                                 </span>
+                                                 <span class="warehouse">
+                                                    收货时间：2015/6/5 10:28:09
+                                                 </span>
+                                                 <span class="warning">
+                                                   [包裹异常请查看]
+                                                   <a href="" class="btn btn-danger" target="_blank">查看情况</a>
+                                                 </span>
+
+                                              </li>
+                                              <li class="pack-hide">
+                                                 <span class="numbers">
+                                                   入库预报单号:
+                                                    <a href="">
+                                                       20150605009
+                                                    </a>
+                                                 </span>
+                                                 <span class="state">
+                                                   状态: 待打包                                           
+                                                 </span>
+                                                 <span class="warehouse">
+                                                    收货时间：2015/6/5 10:28:09
+                                                 </span>
+                                                 <span class="warning">
+                                                   [包裹异常请查看]
+                                                   <a href="" class="btn btn-danger" target="_blank">查看情况</a>
+                                                 </span>
+
+                                              </li>
+                                            </ul>
+                                       </div> 
+                                  </div> 
+                               
+                             </div>
+
+                        </div>
+                        <!-- 商品列表 -->                       
+                        
+                     </dd>
+                 </dl>
+            </div> 
+            <!--  包裹管理 --> 
+
+        </div>
+    </div>
+</div>         
+
+
+<!--footer-->
+<div class="h-footer">
+    <div class="h-mian clearfix">
+        <div class="fo-contact">
+            <dl>
+                <dt>联系我们</dt>
+                <dd>400-800</dd>
+                <dd>400-800</dd>
+                <dd>400-800</dd>
+            </dl>
+        </div>
+        <div class="fo-email">
+            <dl>
+                <dt>邮件</dt>
+                <dd><a href="mailto:service@birdex.cn">service@birdex.cn</a></dd>
+            </dl>
+        </div>
+        <div class="fo-friendly">
+            <dl>
+                <dt>友情链接</dt>
+                <dd><a href="#">福来</a></dd>
+                <dd><a href="#">福来</a></dd>
+                <dd><a href="#">福来</a></dd>
+            </dl>
+        </div>
+        <div class="fo-logo">
+            <a href="/index.html">
+                <img src="http://placehold.it/220x70" width="220px" height="70px" ></a>
+        </div>
+    </div>
+    <p class="brand-register">
+        Copyright @ 2011-2015 美国微转运速递, All Rights Reserved. 沪ICP备15020429号-2
+    </p>
+</div>
+<!--footer-->
+
+<script type="text/javascript">
+seajs.use("./src/package/package.js")
+</script>
+
+
+</body>
+</html>

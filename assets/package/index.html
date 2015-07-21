@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>添加新包裹 - 微转运</title>
+
+    <link rel="stylesheet" href="../../plug-css/bootstrap/3.3.4.c/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../page/new-sea/src/sea.css" />
+
+    <script type="text/javascript" src="../../plug-js/seajs/3.0.0/sea.js"></script>
+    <script type="text/javascript" src="../../plug-js/seajs/3.0.0/seajs-style.js"></script>
+    <script type="text/javascript" src="../../plug-js/config/3.0.0/sea-config.js"></script>
+
+    <script type="text/javascript" src="../../plug-js/jquery/2.1.4/jquery-seajs-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../plug-css/bootstrap/3.3.4.c/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+
+<!-- 数据 -->
+<script type="text/javascript">
+var packageData = [''];  
+</script>
+<!-- 数据 -->
+
+
+<!-- 内容导出 -->
+<form id="packageContainer" style="width: 990px; margin: 0 auto; margin-top: 50px;">
+
+</form>
+<!-- 内容导出 -->
+
+
+<!-- 包裹 | 商品 | 信息 -->
+<div style="width: 990px; margin: 0 auto; margin-top: 50px;">
+
+
+<!-- 产品 类别 -->
+<!-- <div class="modal fade" id="addCategory" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">添加发件人</h4>
+            </div>
+            <form id="addCategoryFrom">
+
+
+                <div class="modal-body">
+                    <div class="addAddresser-from">
+                        <div class="form-group">
+                          <label>类别</label>
+                          <select class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                          <label>子类别</label>
+                          <select class="form-control">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                          </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">保存</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div> -->
+<!-- 产品 类别 -->
+
+
+<!-- 包裹商品信息 -->
+<div class="package-goods-container">
+  <div class="title">
+    包裹商品信息
+    <button type="button" class="btn btn-primary" >添加商品</button>
+  </div>
+  <div class="package-goods-list">
+    <!-- 注释 -->
+    <div class="annotation">
+      <div class="package-box clearfix">
+        <div class="box-1">物品名称(中文)</div>
+        <div class="box-2">物品描述(可空)</div>
+        <div class="box-3">类别</div>
+        <div class="box-4">品牌(英文)</div>
+        <div class="box-5">单价（RMB）</div>
+        <div class="box-6">物品数量</div>
+        <div class="box-7">操作</div>
+      </div>
+    </div>
+    <!-- 注释 -->
+
+    <!-- 商品列表 -->
+    <div class="package-list" id="packageList">
+      <div class="package-item clearfix">
+        <div class="p-box box-1">
+          <input type="text" class="form-control" name="GoodName" placeholder="建议填入中文"></div>
+        <div class="p-box box-2">
+          <input type="text" class="form-control" name="GoodDescribe" ></div>
+        <div class="p-box box-3">
+          <input type="text" class="form-control" name="GoodClasses"  placeholder="点击填入" data-toggle="modal" data-target="#addCategory"></div>
+        <div class="p-box box-4">
+          <input type="text" class="form-control" name="GoodBrand" placeholder="建议填入英文"></div>
+        <div class="p-box box-5">
+          <input type="number" class="form-control" name="GoodPrice" placeholder="0.00"></div>
+        <div class="p-box box-6">
+          <input type="number" class="form-control" name="GoodQuantity" placeholder="0"></div>
+        <div class="p-box box-7">
+          <a href="javascript:void(0)" >删除</a>
+        </div>
+      </div>
+    </div>
+    <!-- 商品列表 -->
+    </div>
+</div>
+<!-- 包裹商品信息 -->
+
+
+<button type="button" class="btn btn-primary" id="submitId" style="margin-top:50px;">验证验证</button>
+</div>
+
+
+<script type="text/javascript">
+seajs.use("./src/package.js",function(pack){
+      pack.init({
+           packageData : packageData ,
+           outputId : "#packageContainer"
+      })
+
+      $("#submitId").click(function(){
+          pack.submit(function(e){
+               console.log(e)
+          })
+      })
+})  
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="./img/wzy.ico" type="image/x-icon" />
+    <title>留言中心 - 微转运</title>
+
+    <link rel="stylesheet" href="../../../AllQuote/plug-css/bootstrap/3.3.4.c/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../../AllQuote/page/new-sea/src/sea.css" />
+
+    <script type="text/javascript" src="../../../AllQuote/plug-js/seajs/3.0.0/sea.js"></script>
+    <script type="text/javascript" src="../../../AllQuote/plug-js/seajs/3.0.0/seajs-style.js"></script>
+    <script type="text/javascript" src="../../../AllQuote/plug-js/config/3.0.0/sea-config.js"></script>
+
+    <script type="text/javascript" src="../../../AllQuote/plug-js/jquery/2.1.4/jquery-seajs-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../../AllQuote/plug-css/bootstrap/3.3.4.c/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+
+<!--head-->
+<!--inform-->
+<!-- <div class="h-inform">
+    <div class="h-mian">
+        <div class="head clearfix">
+            <h3 class="column"> <i class="iconfont">&#xe61d;</i>
+                公告
+            </h3>
+            <a href="javascirpt:void(0)" class="close">X</a>
+        </div>
+        <div class="notice clearfix">
+            <ul>
+                <li>我是公告一我是公告一我是公告一我是公告一我是公告一我是公告一<a href="#" target="_blank">查看详情</a></li>
+            </ul>
+        </div>
+    </div>
+</div> -->
+<!--inform-->
+
+
+<div class="h-head-top">
+    <div class="h-mian clearfix">
+        <div class="h-top-left">
+            <a href="javascript:void(0)" class="clearfix">
+                <i class="iconfont">&#xe61d;</i>
+                网站最新公告 <span>4</span> 条
+            </a>   
+        </div>
+        <div class="h-top-right">
+             <a href="./register.html"> 注册 </a> |
+             <a href="./login.html"> 登陆 </a>
+        </div> 
+         <!-- <div class="h-top-right">
+             <a href="#"> xiaomiao </a> |
+             <a href="#"> 退出 </a>
+        </div>  -->
+    </div>
+</div>
+
+<div class="h-head h-head-bottom">
+    <div class="h-mian clearfix">
+        <div class="hd-logo">
+            <a href="/index.html">
+               <img src="http://placehold.it/220x70" width="220px" height="70px" >   
+            </a>
+        </div>
+        <div class="hd-list">
+            <ul class="clearfix">
+                <li><a href="">首页</a></li>
+                <li><a href="">上传身份证</a></li>
+                <li><a href="">关于微转运</a></li>
+                <li><a href="" class="selected">帮助中心</a></li>                  
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- head -->
+
+
+<!-- 添加留言 -->
+<div class="modal fade" id="myMessage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">留言填写</h4>
+            </div>
+            <form id="addMessageForm" >
+                <div class="modal-body">
+                     <div class="compensation-from">
+                        <div class="form-group">
+                            <label>标题</label>
+                            <input type="text" class="form-control" name="messageTitle" id="messageTitle"></div>
+                        <div class="form-group">
+                            <label>内容</label>
+                            <textarea class="form-control" cols="20"  name="messageContent" id="messageContent"  rows="2"></textarea> 
+                            </div>    
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">留言</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- 添加留言 -->
+
+
+<!-- 回复留言 -->
+<div class="modal fade" id="myMessageReply" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">留言回复</h4>
+            </div>
+            <form id="replyMessageForm">
+                <div class="modal-body">
+                     <div class="compensation-list">
+                          <ul>
+                              <li>
+                                 <p class="c-name">a</p>
+                                 <p class="c-content">bsssdsdssd</p>   
+                              </li>
+                              <li>
+                                 <p class="c-name">b</p>
+                                 <p class="c-content">bsssdsdssd</p>   
+                              </li>
+                              <li>
+                                 <p class="c-name">a</p>
+                                 <p class="c-content">bsssdsdssd</p>   
+                              </li>
+                              <li>
+                                 <p class="c-name">b</p>
+                                 <p class="c-content">bsssdsdssd</p>   
+                              </li>
+                              <li>
+                                 <p class="c-name">a</p>
+                                 <p class="c-content">bsssdsdssd</p>   
+                              </li>
+                              <li>
+                                 <p class="c-name">b</p>
+                                 <p class="c-content">bsssdsdssd</p>   
+                              </li>
+                              <li>
+                                 <p class="c-name">a</p>
+                                 <p class="c-content">bsssdsdssd</p>   
+                              </li>
+                          </ul>
+                     </div> 
+                     <div class="form-group">
+                            <label for="exampleInputPassword1">内容回复</label>
+                            <textarea class="form-control" cols="20" name="messageContent" id="messageContent" rows="2"></textarea> 
+                     </div>  
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">回复</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- 回复留言 -->
+
+<!-- 查看留言 -->
+<div class="modal fade" id="myMessageList" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">留言查看</h4>
+            </div>
+            <div class="modal-body">
+                <div class="compensation-list">
+                      <ul>
+                          <li>
+                             <p class="c-name">a</p>
+                             <p class="c-content">bsssdsdssd</p>   
+                          </li>
+                          <li>
+                             <p class="c-name">b</p>
+                             <p class="c-content">bsssdsdssd</p>   
+                          </li>
+                          <li>
+                             <p class="c-name">a</p>
+                             <p class="c-content">bsssdsdssd</p>   
+                          </li>
+                          <li>
+                             <p class="c-name">b</p>
+                             <p class="c-content">bsssdsdssd</p>   
+                          </li>
+                          <li>
+                             <p class="c-name">a</p>
+                             <p class="c-content">bsssdsdssd</p>   
+                          </li>
+                          <li>
+                             <p class="c-name">b</p>
+                             <p class="c-content">bsssdsdssd</p>   
+                          </li>
+                          <li>
+                             <p class="c-name">a</p>
+                             <p class="c-content">bsssdsdssd</p>   
+                          </li>
+                      </ul>
+                 </div>  
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 查看留言 -->
+
+
+<div class="operation-page container-fluid">
+
+     <div class="h-mian clearfix">
+          <div class="op-left">
+               <!--用户信息-->
+               <div class="use-inf">
+                    <p class="name">xiaowang</p> 
+                    <p class="grade">砖石VIP</p>
+                    <p class="message">留言</p>
+               </div>
+               <!--快速进入-->
+               <div class="quick-access">
+                    <ul class="clearfix">
+                         <li class="q-1">
+                             <i class="iconfont">&#xe601;</i>
+                             <span class="label">0.00</span>
+                             <a href="#">充值</a>   
+                         </li>
+                         <li class="q-2">
+                             <i class="iconfont">&#xe601;</i>
+                             <span class="label">0.00</span>
+                             <a href="#">优惠券</a>   
+                         </li>
+                    </ul> 
+               </div>
+               <!--导航模块-->
+               <div class="nav-link">
+                    <ul>
+                        <li class="n-1">
+                            <a href="#">
+                               <i class="iconfont">&#xe601;</i>
+                               我的包裹管理 
+                            </a>
+                        </li>
+                        <li class="n-2">
+                            <a href="#">
+                               <i class="iconfont">&#xe601;</i>
+                               海外仓库地址 
+                            </a>
+                        </li>
+                        <li class="n-3">
+                            <a href="#">
+                               <i class="iconfont">&#xe601;</i>
+                               我的账户信息 
+                            </a>
+                        </li>
+                    </ul>
+               </div> 
+          </div>
+          <div class="op-right">
+               <!-- 留言中心 -->
+               <div class="message-centre">
+                    <dl>
+                        <dt class="title">
+                            留言中心
+                            <button type="button" class="btn btn-primary" id="addNewMessage">添加新留言</button>
+                        </dt>
+                        <dd class="message">
+                            <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+                                <ul id="myTab" class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">未读留言</a>
+                                    </li>
+                                    <li role="presentation" class="">
+                                        <a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">全部留言</a>
+                                    </li>
+                                    
+                                </ul>
+                                <div id="myTabContent" class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+                                        <!-- 搜索 -->                                        
+                                        <div class="bask-search">
+                                            <div class="form-inline">
+                                                <div class="form-group">
+                                                    <label for="exampleInputName2">留言内容：</label>
+                                                    <input type="text" class="form-control" id="exampleInputName2" placeholder="输入转运单号">                                        
+                                                    <button type="button" class="btn btn-primary">搜索</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 搜索 -->                                        
+                                        <table class="table table-bordered table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>留言主题</th>
+                                                    <th>留言内容</th>
+                                                    <th>更新时间</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>sdsd</td>
+                                                    <td>11111111111111111</td>
+                                                    <td>2015-06-02 19:13:45</td>
+                                                    <td>
+                                                        <a href="javascript:void(0)" class="replyMessage" >留言回复</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>sdsd</td>
+                                                    <td>11111111111111111</td>
+                                                    <td>2015-06-02 19:13:45</td>
+                                                    <td>
+                                                        <a href="javascript:void(0)" class="replyMessage" >留言回复</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+                                        <!-- 搜索 -->                                        
+                                        <div class="bask-search">
+                                            <div class="form-inline">
+                                                <div class="form-group">
+                                                    <label for="exampleInputName2">留言内容：</label>
+                                                    <input type="text" class="form-control" id="exampleInputName2" placeholder="输入转运单号">                                        
+                                                    <button type="button" class="btn btn-primary">搜索</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- 搜索 -->                                        
+                                        <table class="table table-bordered table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>留言主题</th>
+                                                    <th>留言内容</th>
+                                                    <th>更新时间</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>sdsd</td>
+                                                    <td>11111111111111111</td>
+                                                    <td>2015-06-02 19:13:45</td>
+                                                    <td>
+                                                        <a href="javascript:void(0)" class="detailsMessage">查看情况</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                
+                                </div>
+                            </div>
+
+                                                          
+                        </dd>
+                    </dl>
+               </div> 
+               <!-- 留言中心 -->
+          </div>
+    </div>      
+</div>
+
+<!--footer-->
+<div class="h-footer">
+    <div class="h-mian clearfix">
+        <div class="fo-contact">
+            <dl>
+                <dt>联系我们</dt>
+                <dd>400-800</dd>
+                <dd>400-800</dd>
+                <dd>400-800</dd>
+            </dl>
+        </div>
+        <div class="fo-email">
+            <dl>
+                <dt>邮件</dt>
+                <dd><a href="mailto:service@birdex.cn">service@birdex.cn</a></dd>
+            </dl>
+        </div>
+        <div class="fo-friendly">
+            <dl>
+                <dt>友情链接</dt>
+                <dd><a href="#">福来</a></dd>
+                <dd><a href="#">福来</a></dd>
+                <dd><a href="#">福来</a></dd>
+            </dl>
+        </div>
+        <div class="fo-logo">
+            <a href="/index.html">
+                <img src="http://placehold.it/220x70" width="220px" height="70px" ></a>
+        </div>
+    </div>
+    <p class="brand-register">
+        Copyright @ 2011-2015 美国微转运速递, All Rights Reserved. 沪ICP备15020429号-2
+    </p>
+</div>
+<!--footer-->
+
+<script type="text/javascript">
+seajs.use("./src/message/message.js")    
+</script>
+
+
+</body>
+</html>

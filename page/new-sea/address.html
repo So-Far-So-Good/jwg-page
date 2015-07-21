@@ -1,0 +1,531 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="icon" href="./img/wzy.ico" type="image/x-icon" />
+    <title>地址管理 - 微转运</title>
+
+    <link rel="stylesheet" href="../../../AllQuote/plug-css/bootstrap/3.3.4.c/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../../../AllQuote/page/new-sea/src/sea.css" />
+
+    <script type="text/javascript" src="../../../AllQuote/plug-js/seajs/3.0.0/sea.js"></script>
+    <script type="text/javascript" src="../../../AllQuote/plug-js/seajs/3.0.0/seajs-style.js"></script>
+    <script type="text/javascript" src="../../../AllQuote/plug-js/config/3.0.0/sea-config.js"></script>
+
+    <script type="text/javascript" src="../../../AllQuote/plug-js/jquery/2.1.4/jquery-seajs-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../../AllQuote/plug-css/bootstrap/3.3.4.c/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+
+<!--head-->
+<!--inform-->
+<!-- <div class="h-inform">
+    <div class="h-mian">
+        <div class="head clearfix">
+            <h3 class="column"> <i class="iconfont">&#xe61d;</i>
+                公告
+            </h3>
+            <a href="javascirpt:void(0)" class="close">X</a>
+        </div>
+        <div class="notice clearfix">
+            <ul>
+                <li>我是公告一我是公告一我是公告一我是公告一我是公告一我是公告一<a href="#" target="_blank">查看详情</a></li>
+            </ul>
+        </div>
+    </div>
+</div> -->
+<!--inform-->
+
+
+<div class="h-head-top">
+    <div class="h-mian clearfix">
+        <div class="h-top-left">
+            <a href="javascript:void(0)" class="clearfix">
+                <i class="iconfont">&#xe61d;</i>
+                网站最新公告 <span>4</span> 条
+            </a>   
+        </div>
+        <div class="h-top-right">
+             <a href="./register.html"> 注册 </a> |
+             <a href="./login.html"> 登陆 </a>
+        </div> 
+         <!-- <div class="h-top-right">
+             <a href="#"> xiaomiao </a> |
+             <a href="#"> 退出 </a>
+        </div>  -->
+    </div>
+</div>
+
+<div class="h-head h-head-bottom">
+    <div class="h-mian clearfix">
+        <div class="hd-logo">
+            <a href="/index.html">
+               <img src="http://placehold.it/220x70" width="220px" height="70px" >   
+            </a>
+        </div>
+        <div class="hd-list">
+            <ul class="clearfix">
+                <li><a href="">首页</a></li>
+                <li><a href="">上传身份证</a></li>
+                <li><a href="">关于微转运</a></li>
+                <li><a href="" class="selected">帮助中心</a></li>                  
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- head -->
+
+
+
+<!-- 添加收发人 -->
+<div class="modal fade" id="addAddresser" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">添加发件人</h4>
+            </div>
+            <form id="addAddresserFrom">
+                <div class="modal-body">
+                    <div class="addAddresser-from">
+                        <div class="form-group">
+                            <label>真实姓名 </label>
+                            <input type="text" class="form-control" id="peopleName" name="peopleName" ></div>
+                        <div class="form-group">
+                            <label>身份证号码 </label>
+                            <input type="text" class="form-control" id="peopleIdentity" name="peopleIdentity" ></div>
+                        <div class="form-group">
+                            <label>上传身份证正反面</label>
+                            <div class="fileImg-list">
+                                <div>
+                                   正面： <input type="file" id="identityFront" name="identityFront" style="display: inline-block;">  
+                                </div>
+                                <div>
+                                   反面： <input type="file" id="identityReverse" name="identityReverse" style="display: inline-block;">   
+                                </div>
+                            </div>              
+                            <p class="help-block">图片大小应该保持在800*800以内</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">保存</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- 添加收发人 -->
+
+
+
+<!-- 添加发货地址 -->
+<div class="modal fade" id="shippingAddress" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">添加收货地址</h4>
+            </div>
+            <form id="shippingAddressForm">
+            <div class="modal-body">
+                 <div class="address-from shippingAddress-from">
+                    <div class="form-group">
+                        <div class="row">
+                             <div class="col-xs-4 ad-label">
+                                 <label>发货人 </label>
+                             </div>
+                             <div class="col-xs-20">
+                                 <input type="text" class="form-control" id="deliveryName" name="deliveryName" value="发货人" disabled="disabled">
+                             </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                             <div class="col-xs-4 ad-label">
+                                 <label>公司 </label>
+                             </div>
+                             <div class="col-xs-20">
+                                 <input type="text" class="form-control" id="deliveryCompany" name="deliveryCompany" >
+                             </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                             <div class="col-xs-4 ad-label">
+                                 <label>联系电话 </label>
+                             </div>
+                             <div class="col-xs-20">
+                                 <input type="number" class="form-control" id="deliveryCall" name="deliveryCall">
+                             </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                             <div class="col-xs-4 ad-label">
+                                 <label>国|省|城</label>
+                             </div>
+                             <div class="col-xs-20">
+                                  <div class="row">
+                                      <div class="col-xs-8">
+                                          <input type="text" class="form-control" id="deliveryCountry" name="deliveryCountry"></div>
+                                       <div class="col-xs-8">
+                                          <input type="text" class="form-control" id="deliveryProvinces" name="deliveryProvinces"></div>   
+                                      <div class="col-xs-8">
+                                          <input type="text" class="form-control" id="deliveryCity" name="deliveryCity"></div>
+                                     
+                                  </div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                             <div class="col-xs-4 ad-label">
+                                 <label>邮政编码  </label>
+                             </div>
+                             <div class="col-xs-20">
+                                 <input type="number" class="form-control" id="deliveryZipCode" name="deliveryZipCode" >
+                             </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                             <div class="col-xs-4 ad-label">
+                                 <label>邮箱 </label>
+                             </div>
+                             <div class="col-xs-20">
+                                 <input type="email" class="form-control" id="deliveryEmail" name="deliveryEmail" >
+                             </div>
+                        </div>
+                    </div> 
+                     <div class="form-group">
+                        <div class="row">
+                             <div class="col-xs-4 ad-label">
+                                 <label>详细地址 </label>
+                             </div>
+                             <div class="col-xs-20">
+                                 <input type="text" class="form-control" id="deliveryAddress" name="deliveryAddress" >
+                             </div>
+                        </div>
+                    </div>                     
+                </div> 
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">保存</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- 添加发货地址 -->
+
+
+
+<!-- 添加收货地址 -->
+<div class="modal fade" id="addMyAddress" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title" id="myModalLabel">添加收货地址</h4>
+            </div>
+            <form id="addMyAddressForm">
+            <div class="modal-body">
+                <div class="address-from addAddresser-from">
+                    <div class="form-group">
+                        <div class="row">
+                             <div class="col-xs-4 ad-label">
+                                 <label>收货人 </label>
+                             </div>
+                             <div class="col-xs-20">
+                                 <input type="text" class="form-control" id="receiveName" name="receiveName" value="收货人" disabled="disabled">
+                             </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                             <div class="col-xs-4 ad-label">
+                                 <label>联系电话 </label>
+                             </div>
+                             <div class="col-xs-20">
+                                 <input type="number" class="form-control" id="receivePhone" name="receivePhone" >
+                             </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                             <div class="col-xs-4 ad-label">
+                                 <label>邮箱 </label>
+                             </div>
+                             <div class="col-xs-20">
+                                 <input type="email" class="form-control" id="receiveEmail" name="receiveEmail" >
+                             </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                             <div class="col-xs-4 ad-label">
+                                 <label>邮政编码 </label>
+                             </div>
+                             <div class="col-xs-20">
+                                 <input type="number" class="form-control" id="receiveZipCode" name="receiveZipCode" >
+                             </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                             <div class="col-xs-4 ad-label">
+                                 <label>国家(地区) </label>
+                             </div>
+                             <div class="col-xs-20">
+                                 <select class="prov form-control" id="receiveCountry" name="receiveCountry">
+                                     <option value="0" selected="selected">中国</option>
+                                     <option value="1">美国</option>
+                                 </select>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="form-group" id="addressPcd">
+                        <div class="row">
+                             <div class="col-xs-4 ad-label">
+                                 <label>省|市|区 </label>
+                             </div>
+                             <div class="col-xs-20">
+                                  <div class="row">
+                                    <div id="addCity">
+                                      <div class="col-xs-8">
+                                          <select class="prov form-control" id="receiveProv" name="receiveProv"></select></div>
+                                      <div class="col-xs-8">
+                                          <select class="city form-control" id="receiveCity" name="receiveCity" disabled></select></div>
+                                      <div class="col-xs-8">
+                                          <select class="dist form-control" id="receiveDist" name="receiveDist" disabled></select></div>
+                                    </div>
+                                  </div>
+                             </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                             <div class="col-xs-4 ad-label">
+                                 <label>详细地址 </label>
+                             </div>
+                             <div class="col-xs-20">
+                                 <input type="text" class="form-control" id="receiveAddress" name="receiveAddress" >
+                             </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                             <div class="col-xs-4 ad-label">
+                                 <label>公司 </label>
+                             </div>
+                             <div class="col-xs-20">
+                                 <input type="text" class="form-control" id="receiveCompany" name="receiveCompany" >
+                             </div>
+                        </div>
+                    </div>                     
+                </div> 
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">保存</button>
+            </div>
+            </form>
+        </div>
+    </div>
+</div>
+<!-- 添加收货地址 -->
+
+
+
+<!-- 编辑收发人 -->
+
+<!-- 编辑收发人 -->
+
+
+<!-- 修改收货人地址 -->
+
+<!-- 修改收货人地址 -->
+
+<!-- 修改收货人地址 -->
+
+<!-- 修改收货人地址 -->
+
+
+<div class="operation-page container-fluid">
+
+     <div class="h-mian clearfix">
+          <div class="op-left">
+               <!--用户信息-->
+               <div class="use-inf">
+                    <p class="name">xiaowang</p> 
+                    <p class="grade">砖石VIP</p>
+                    <p class="message">留言</p>
+               </div>
+               <!--快速进入-->
+               <div class="quick-access">
+                    <ul class="clearfix">
+                         <li class="q-1">
+                             <i class="iconfont">&#xe601;</i>
+                             <span class="label">0.00</span>
+                             <a href="#">充值</a>   
+                         </li>
+                         <li class="q-2">
+                             <i class="iconfont">&#xe601;</i>
+                             <span class="label">0.00</span>
+                             <a href="#">优惠券</a>   
+                         </li>
+                    </ul> 
+               </div>
+               <!--导航模块-->
+               <div class="nav-link">
+                    <ul>
+                        <li class="n-1">
+                            <a href="#">
+                               <i class="iconfont">&#xe601;</i>
+                               我的包裹管理 
+                            </a>
+                        </li>
+                        <li class="n-2">
+                            <a href="#">
+                               <i class="iconfont">&#xe601;</i>
+                               海外仓库地址 
+                            </a>
+                        </li>
+                        <li class="n-3">
+                            <a href="#">
+                               <i class="iconfont">&#xe601;</i>
+                               我的账户信息 
+                            </a>
+                        </li>
+                    </ul>
+               </div> 
+          </div>
+          <div class="op-right">
+               
+               <!-- 地址管理 -->
+               <div class="address-manage">
+                    <dl>
+                        <dt class="title">
+                            用户地址管理 
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addAddresser">添加发件人</button>
+                        </dt>
+                        <dd class="address">
+                           <div class="address-list"> 
+                                <div class="address-item">
+                                     <div class="head">
+                                         <span class="a-name">
+                                              张三丰
+                                         </span>
+                                         <a href="" class="label label-danger">未认证</a>
+                                         <div class="a-operate">
+                                             <a href="#" data-toggle="modal" data-target="#shippingAddress">添加发货地址</a>
+                                             <a href="#" data-toggle="modal" data-target="#addMyAddress">添加收货地址</a>
+
+                                             <a href="javascript:void(0)" class="editorsPeople" >编辑收发人</a>
+                                             
+                                             <a href="javascript:void(0)" class="removePeople" >删除</a> 
+                                         </div>
+                                     </div>
+                                     <div class="content">
+                                         <table class="table table-bordered table-hover">
+                                             <thead>
+                                                 <tr>
+                                                     <th class="t-1">类型</th>
+                                                     <th class="t-2">地址</th>
+                                                     <th class="t-3">邮编</th>
+                                                     <th class="t-4">操作</th>
+                                                 </tr>
+                                             </thead>
+                                             <tbody>
+                                                 <tr>
+                                                     <td><span class="label label-primary">收货人地址</span></td>
+                                                     <td>广东省 广州市 市辖区 sdf </td>
+                                                     <td>311400</td>
+                                                     <td>
+                                                         <a href="javascript:void(0)" class="editorsDelivery">修改</a> |
+                                                         <a href="javascript:void(0)" class="removeDelivery">删除</a>
+                                                     </td>
+                                                 </tr>
+                                             </tbody>
+                                             <tbody>
+                                                 <tr>
+                                                   <td><span class="label label-success">发货人地址</span></td>
+                                                     <td>广东省 广州市 市辖区 sdf </td>
+                                                     <td>311400</td>
+                                                     <td>
+                                                         <a href="javascript:void(0)" class="editorsReceive">修改</a> |
+                                                         <a href="javascript:void(0)" class="removeReceive">删除</a>
+                                                     </td>
+                                                 </tr>
+                                             </tbody>
+                                         </table> 
+                                     </div>                                    
+                                </div>
+                           </div>  
+                        </dd>
+                    </dl>
+               </div>
+               <!-- 地址管理 -->
+
+          </div>
+      </div>     
+</div>
+
+
+<script type="text/javascript">
+seajs.use("./src/address/address.js")    
+</script>
+
+
+
+<!--footer-->
+<div class="h-footer">
+    <div class="h-mian clearfix">
+        <div class="fo-contact">
+            <dl>
+                <dt>联系我们</dt>
+                <dd>400-800</dd>
+                <dd>400-800</dd>
+                <dd>400-800</dd>
+            </dl>
+        </div>
+        <div class="fo-email">
+            <dl>
+                <dt>邮件</dt>
+                <dd><a href="mailto:service@birdex.cn">service@birdex.cn</a></dd>
+            </dl>
+        </div>
+        <div class="fo-friendly">
+            <dl>
+                <dt>友情链接</dt>
+                <dd><a href="#">福来</a></dd>
+                <dd><a href="#">福来</a></dd>
+                <dd><a href="#">福来</a></dd>
+            </dl>
+        </div>
+        <div class="fo-logo">
+            <a href="/index.html">
+                <img src="http://placehold.it/220x70" width="220px" height="70px" ></a>
+        </div>
+    </div>
+    <p class="brand-register">
+        Copyright @ 2011-2015 美国微转运速递, All Rights Reserved. 沪ICP备15020429号-2
+    </p>
+</div>
+<!--footer-->
+
+
+</body>
+</html>
