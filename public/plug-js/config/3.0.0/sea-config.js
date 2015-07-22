@@ -18,5 +18,5 @@ seajs.config({
 		"properties" : "plug-js/jquery-properties/jquery.i18n.properties.seajs.js",
 		"i18next" : "plug-js/i18next/i18next-1.10.1.seajs.js"
 	},
-	base: "../../"
+	base: "http://localhost:8080/"
 })

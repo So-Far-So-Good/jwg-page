@@ -294,7 +294,7 @@
 
 
 <script type="text/javascript">
-    seajs.use("../page/new-sea/src/userIndex/userIndex.js")
+   seajs.use("http://localhost:8080/page/new-sea/src/userIndex/userIndex.js")
 </script>
 
 

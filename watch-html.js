@@ -34,6 +34,10 @@ server.listen(app.get('port'), function() {
 app.use(express.static(path.join(__dirname, 'public')));
 
 /*-- 页面请求 --*/
+app.get('/page-list',function(req, res){
+    res.render('page-list');
+});
+
 app.get('/index',function(req, res){
     res.render('index',{data:'1'});
 });
