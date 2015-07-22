@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<link rel="icon" href="./img/wzy.ico" type="image/x-icon" />
+	<title>{{title}}</title>
+    
+
+    {{include ("./header/quote-header")}}  
+
+</head>
+
+<body>  
+     <!-- 左侧 -->
+
+     {{include ("./header/header")}} 
+
+     <div class="operation-page container-fluid">
+
+     	<div class="h-mian clearfix">
+     		<div class="op-left">
+     			<!--用户信息-->     
+     			<div class="use-inf">
+     				<p class="name">xiaowang</p>
+     				<p class="grade">砖石VIP</p>
+     				<p class="message">留言</p>
+     			</div>
+     			<!--快速进入-->     
+     			<div class="quick-access">
+     				<ul class="clearfix">
+     					<li class="q-1"> <i class="iconfont">&#xe601;</i>
+     						<span class="label">0.00</span>
+     						<a href="#">充值</a>
+     					</li>
+     					<li class="q-2"> <i class="iconfont">&#xe601;</i>
+     						<span class="label">0.00</span>
+     						<a href="#">优惠券</a>
+     					</li>
+     				</ul>
+     			</div>
+     			<!--导航模块-->     
+     			<div class="nav-link">
+     				<ul>
+     					<li class="n-1">
+     						<a href="#">
+     							<i class="iconfont">&#xe601;</i>
+     							我的包裹管理
+     						</a>
+     					</li>
+     					<li class="n-2">
+     						<a href="#">
+     							<i class="iconfont">&#xe601;</i>
+     							海外仓库地址
+     						</a>
+     					</li>
+     					<li class="n-3">
+     						<a href="#">
+     							<i class="iconfont">&#xe601;</i>
+     							我的账户信息
+     						</a>
+     					</li>
+     				</ul>
+     			</div>
+     		</div>
+     		<div class="op-right"> 
+     		   {{{block ("body")}}}
+     		</div>
+     	</div>
+     </div>
+
+
+     {{include ("./footer/footer")}}  
+
+</body>
+</html>

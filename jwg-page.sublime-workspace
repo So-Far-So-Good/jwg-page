@@ -1,0 +1,652 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"re",
+				"require"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"h",
+				"href	Attr"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"sea",
+				"seajs"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"ba",
+				"background-position"
+			],
+			[
+				"lin",
+				"inline-block"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"fl",
+				"float"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"bl",
+				"bolder"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"co",
+				"color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "watch-html.js",
+			"settings":
+			{
+				"buffer_size": 943,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "package.json",
+			"settings":
+			{
+				"buffer_size": 177,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "page/xtpl-sea/test.xtpl",
+			"settings":
+			{
+				"buffer_size": 8,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 334.0,
+		"last_filter": "set js",
+		"selected_items":
+		[
+			[
+				"set js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set html",
+				"Set Syntax: HTML"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"set css",
+				"Set Syntax: CSS"
+			],
+			[
+				"instak",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 528.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf), 'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/GitHub/jwg-page",
+		"/E/GitHub/jwg-page/page/xtpl-sea"
+	],
+	"file_history":
+	[
+		"/E/GitHub/jwg-page/package.json",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/test/幸运大转盘.html",
+		"/E/GitHub/demo/angularjs/index.html",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/i18n/zh-CN/test.json",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/i18next/i18next-1.10.1.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/i18next/i18next-1.10.1.seajs.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/address.html",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/watch-html.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/assets/user/user.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/config/3.0.0/sea-config.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/assets/global/global.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/assets/global/new-global.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/i18n/en-US/text.json",
+		"/E/GitHub/demo/watch-html.js",
+		"/E/GitHub/flfly/.git/info/exclude",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/watch-html.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/i18n/test_en.properties",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/i18n/test.properties",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-css/bootstrap/3.3.4.c/js/bootstrap.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-css/bootstrap/3.3.4.c/js/bootstrap.min.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/jquery-properties/jquery.i18n.properties.seajs.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/bootstrap-test.html",
+		"/C/Users/ludongwei/Desktop/i18next-1.10.1/i18next-1.10.1/i18next-1.10.1.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/package.json",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/i18n/strings.properties",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/i18n/strings_en.properties",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/jquery-properties/jquery.i18n.properties.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/bask.html",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/about.html",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/test/rotata.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/src/sea.less",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/assets/package/src/package.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/src/newPackage/newPackage.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/newPackage.html",
+		"/C/Users/ludongwei/Desktop/jquery-i18n-properties-master/jquery-i18n-properties-master/jquery.i18n.properties.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/assets/package/index.html",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/README.md",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/src/home/home.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/assets/package/src/templates/addPackage.hbs",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/jquery-validation/1.13.1/jquery.validate.seajs.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/assets/package/src/templates/package.hbs",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/src/login/login.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/src/address/address.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/src/bootstrap-test/bootstrap-test.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/jquery-cityselect/jquery.cityselect.seajs.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/jquery-cityselect/city.min.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/assets/package.json",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/src/package/package.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/package.html",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/src/package/templates/package-templates.js",
+		"/C/Users/ludongwei/Desktop/Gruntfile.js",
+		"/C/Users/ludongwei/Desktop/package.json",
+		"/C/Users/ludongwei/Desktop/.csslintrc",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/aabbcc/aabbcc/new-sea/src/package/templates/package.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/package/package.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/build/js/new-sea/src/package/templates/package.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-css/gulpfile.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/package.json",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-css/package.json",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/handlebars/3.0.3/handlebars-v3.0.3.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/obstinate/src/writenumber.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/Views/Index/userLogin.cshtml",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/login.html",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/obstinate/NewStyle/css/maruti-media.css",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/shipments.html",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/page-list.html",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/Views/IndexW/Index.cshtml",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/Views/Index/Index.cshtml",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/gulpfile.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/zeroclipboard/2.2.0/dist/ZeroClipboard-seajs.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/locality-dist/plug-js/jquery-cityselect/jquery.cityselect.seajs.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/locality-dist/plug-js/jquery-cityselect/jquery.cityselect.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/locality-dist/plug-js/jquery-cityselect/city.min.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/package.json",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/markdown/markdown.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/bootstrap-test -online.html",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/locality-dist/plug-js/jquery-cookie/jquery-cookie.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/locality-dist/plug-js/jquery-cookie/jquery-cookie-seajs.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/locality-dist/plug-js/markdown/markdown.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/locality-dist/plug-js/seajs/3.0.0/seajs-style.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/locality-dist/plug-js/seajs/3.0.0/sea.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/locality-dist/plug-css/bootstrap/3.3.4/bootstrap.min.css",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/index.html",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/Views/Package/PackageAdd.cshtml",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/Views/User/UserReceiveAddressSave.cshtml",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/obstinate/mod/sea-config/sea-config.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/obstinate/src/prourdi.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/test/Color.html",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/obstinate/src/weightCount.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/obstinate/jwg/register/register.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/src/register/register.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/obstinate/Shared/IndexShared.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/obstinate/Static/Administrator/script/ZeroClipboard.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/jquery-cookie/jquery-cookie-seajs.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/zeroclipboard/2.2.0/src/js/end.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/jquery/1.8.3/jquery-1.8.3.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/obstinate/resources/scripts/backstage.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/src/top-up/top-up.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-css/bootstrap-datetimepicker/bootstrap-datetimepicker.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/jquery/1.11.3/jquery-1.11.3-seajs.min.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/userIndex.html",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-css/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-css/bootstrap-datetimepicker/bootstrap-datetimepicker.zh-CN.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/jquery-pagination/jquery.bs_pagination-seajs.js",
+		"/C/Users/ludongwei/Desktop/pd-201490fc-9fd6-11e4-bbe5-00163e001348/bootStrapPager/index.html",
+		"/C/Users/ludongwei/Desktop/bs_pagination-master (1)/bs_pagination-master/jquery.bs_pagination.css",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/Views/UserCL/register.cshtml",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/jquery-pagination/localization/ru.min.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/jquery-pagination/localization/ru.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/jquery-pagination/jquery.bs_pagination.js",
+		"/C/Users/ludongwei/Desktop/bs_pagination-master (1)/bs_pagination-master/jquery.bs_pagination.bs2.css",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/register.html",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/top-up.html",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/message.html",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/src/userIndex/userIndex.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/jquery-validation/1.13.1/jquery.validate.min.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/jquery-validation/1.13.1/jquery.validate.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/wpaopenQQ/微信转运悬浮.html",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/obstinate/src/jquery.cityselect.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/obstinate/src/UpData_prov.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/plug-js/jquery-cityselect/jquery.cityselect.js",
+		"/C/Users/ludongwei/Desktop/city.min.js",
+		"/E/GitHub/demo/region/src/areas.js",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/dropoff.html",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/new-sea/help.html",
+		"/C/Users/ludongwei/Desktop/海外购物篇.html",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/AllQuote/page/package/package.css",
+		"/E/GitHub/flfly/FlyMVCweb/FlyMVCweb/Views/IndexW/userLogin.cshtml"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\")))",
+			"        ",
+			"localize",
+			"pack",
+			"PACK",
+			"pack",
+			"$.t",
+			".t",
+			"t",
+			"AllQuote",
+			"init",
+			"root",
+			"resGetPath",
+			"fallbackLng",
+			"us",
+			"zh",
+			"GoodClasses",
+			"ddd",
+			"default",
+			"package-item",
+			"return",
+			"opts",
+			"defaults",
+			"}\n",
+			"number",
+			"GoodPrice",
+			"200",
+			"showLabel",
+			"keyup",
+			"onkeyup",
+			"onclick",
+			"onfocusout",
+			"onfocusin",
+			"onkeyup",
+			"onfocusout",
+			"class",
+			"GoodName-error",
+			"errorClass",
+			"sea-error",
+			"verify",
+			"validate",
+			"valid",
+			"console",
+			"onfocusout",
+			"onkeyup",
+			"onfocusout",
+			".on",
+			"keydown",
+			"keypress",
+			"on",
+			"change",
+			"packageList",
+			"$('#addCategory')",
+			"addCategory",
+			"category",
+			"#addCategory",
+			"receiveProv",
+			"addCity",
+			"hbs",
+			"handlebars",
+			"发货人所在地区邮编填写不正确。",
+			"Deliver_Postal",
+			"DeliverPostal",
+			"Address_Email",
+			"email_a2",
+			"Address_Email",
+			"email_a2",
+			"AddressEmail",
+			"REG_EMAIL",
+			"Address_Postal",
+			"postal_no_a2",
+			"email_a2",
+			"      	\n",
+			"for=\"exampleInputEmail1\"",
+			"id=\"exampleInputEmail1\"",
+			"../../../",
+			"AllQuote",
+			"userlogin",
+			"/AllQuote",
+			"col-xs-11",
+			"ackageOdd-item",
+			"label\"",
+			"col-xs-8",
+			"http://192.168.1.120:82",
+			"//",
+			"zeroclipboard",
+			"src",
+			"plug-js",
+			"/plug-js/",
+			"disabled",
+			"../../..",
+			"./src/",
+			"./src",
+			"../../..",
+			"-css",
+			"i",
+			"/AllQuote",
+			"ajax",
+			"Ajax",
+			"ajax",
+			"Ajax",
+			"administrator/GetFreight",
+			"city",
+			"console",
+			"btn-register",
+			"define.amd",
+			"define",
+			"'))",
+			"Delivery",
+			"#",
+			"编辑收发人",
+			"编辑收发人 ",
+			"true",
+			"addMyAddressForm",
+			"Prov",
+			"exampleInputEmail1",
+			"true",
+			"exampleInputEmail1",
+			"addMyAddress",
+			"days",
+			"-2",
+			"-4",
+			"4",
+			"6",
+			"12",
+			"col-xs-12",
+			"rsc_bs_pag",
+			"$"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "watch-html.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 943,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								538,
+								538
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 126.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 177,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								149,
+								149
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "page/xtpl-sea/test.xtpl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2,
+								6
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "jwg-page.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 181.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

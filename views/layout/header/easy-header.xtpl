@@ -1,0 +1,11 @@
+<!--easy head-->
+<div class="h-head h-head-bottom">
+    <div class="h-mian clearfix">
+        <div class="hd-logo">
+            <a href="./index.html">
+               <img src="http://placehold.it/220x70" width="220px" height="70px" >   
+            </a>
+        </div>
+    </div>
+</div>
+<!--easy head-->

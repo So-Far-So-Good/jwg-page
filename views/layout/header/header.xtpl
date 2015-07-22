@@ -1,0 +1,70 @@
+<!--head-->
+<!--inform-->
+<div class="h-inform">
+    <div class="h-mian">
+        <div class="head clearfix">
+            <h3 class="column"> <i class="iconfont">&#xe61d;</i>
+                公告
+            </h3>
+            <a href="javascirpt:void(0)" class="close">X</a>
+        </div>
+        <div class="notice clearfix">
+            <ul>
+                <li>
+                    我是公告一我是公告一我是公告一我是公告一我是公告一我是公告一
+                    <a href="#" target="_blank">查看详情</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--inform-->
+
+<div class="h-head-top">
+    <div class="h-mian clearfix">
+        <div class="h-top-left">
+            <a href="javascript:void(0)" class="clearfix"> <i class="iconfont">&#xe61d;</i>
+                网站最新公告
+                <span>4</span>
+                条
+            </a>
+        </div>
+        <div class="h-top-right">
+            <a href="./register.html">注册</a>
+            |
+            <a href="./login.html">登陆</a>
+        </div>
+        <!-- <div class="h-top-right">
+        <a href="#">xiaomiao</a>
+        |
+        <a href="#">退出</a>
+    </div>
+    -->
+</div>
+</div>
+
+<div class="h-head">
+<div class="h-mian clearfix">
+    <div class="hd-logo">
+        <a href="/index.html">
+            <img src="http://placehold.it/220x70" width="220px" height="70px" ></a>
+    </div>
+    <div class="hd-list">
+        <ul class="clearfix">
+            <li>
+                <a href="" class="selected">首页</a>
+            </li>
+            <li>
+                <a href="">我要托运</a>
+            </li>
+            <li>
+                <a href="">价格体系</a>
+            </li>
+            <li>
+                <a href="./help.html">用户必读</a>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>
+<!--head-->

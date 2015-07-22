@@ -1,0 +1,43 @@
+<!--footer-->
+<div class="h-footer">
+    <div class="h-mian clearfix">
+        <div class="fo-contact">
+            <dl>
+                <dt>联系我们</dt>
+                <dd>400-800</dd>
+                <dd>400-800</dd>
+                <dd>400-800</dd>
+            </dl>
+        </div>
+        <div class="fo-email">
+            <dl>
+                <dt>邮件</dt>
+                <dd>
+                    <a href="mailto:service@birdex.cn">service@birdex.cn</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="fo-friendly">
+            <dl>
+                <dt>友情链接</dt>
+                <dd>
+                    <a href="#">福来</a>
+                </dd>
+                <dd>
+                    <a href="#">福来</a>
+                </dd>
+                <dd>
+                    <a href="#">福来</a>
+                </dd>
+            </dl>
+        </div>
+        <div class="fo-logo">
+            <a href="/index.html">
+              <img src="http://placehold.it/220x70" width="220px" height="70px" ></a>
+        </div>
+    </div>
+    <p class="brand-register">
+        Copyright @ 2011-2015 美国微转运速递, All Rights Reserved. 沪ICP备15020429号-2
+    </p>
+</div>
+<!--footer-->

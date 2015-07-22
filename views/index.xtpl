@@ -1,0 +1,6 @@
+{{extend ("./layout/layout")}}
+
+{{#block ("body")}}
+    123
+    123
+{{/block}}

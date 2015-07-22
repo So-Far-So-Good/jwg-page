@@ -1,0 +1,302 @@
+{{extend ("./layout/left-layout")}}
+
+{{#block ("body")}}
+<!--账户信息-->
+<div class="account-inf">
+	<dl>
+		<dt class="title">账户信息</dt>
+		<dd class="account-item">
+			<div class="row">
+				<div class="col-xs-5">
+					<label>用户识别码 :</label>
+				</div>
+				<div class="col-xs-11 inf">
+					<span class="label label-success">WZDDGQSG</span>
+				</div>
+				<div class="col-xs-8 operation">
+					<a href="" data-toggle="modal" data-target="#changePassword">[修改密码]</a>
+				</div>
+			</div>
+		</dd>
+		<dd class="account-item">
+			<div class="row">
+				<div class="col-xs-5">
+					<label>用户级别 :</label>
+				</div>
+				<div class="col-xs-11 inf">
+					<span class="label label-success">钻石VIP会员</span>
+				</div>
+				<div class="col-xs-8 operation"></div>
+			</div>
+		</dd>
+		<dd class="account-item">
+			<div class="row">
+				<div class="col-xs-5">
+					<label>认证状态 :</label>
+				</div>
+				<div class="col-xs-11 inf">
+					<span class="label label-success">已认证</span>
+				</div>
+				<div class="col-xs-8 operation"></div>
+			</div>
+		</dd>
+		<dd class="account-item">
+			<div class="row">
+				<div class="col-xs-5">
+					<label>账户余额 :</label>
+				</div>
+				<div class="col-xs-11 inf">
+					<span class="label label-primary">￥-922.19 RMB</span>
+				</div>
+				<div class="col-xs-8 operation">
+					<a href="">[充值]</a>
+					<a href="">[交易记录]</a>
+				</div>
+			</div>
+		</dd>
+		<!-- <dd class="account-item">
+		<div class="row">
+			<div class="col-xs-5">
+				<label>我的优惠券 :</label>
+			</div>
+			<div class="col-xs-11 inf">
+				<span class="label label-warning">5</span>
+			</div>
+			<div class="col-xs-8 operation">
+				<a href="">[查看全部优惠券]</a>
+			</div>
+		</div>
+	</dd>
+	-->
+	<dd class="account-item">
+		<div class="row">
+			<div class="col-xs-5">
+				<label>待认领包裹 :</label>
+			</div>
+			<div class="col-xs-11 inf">
+				<span class="label label-warning">5</span>
+			</div>
+			<div class="col-xs-8 operation"></div>
+		</div>
+	</dd>
+	<dd class="account-item">
+		<div class="row">
+			<div class="col-xs-5">
+				<label>未读站内信信息 :</label>
+			</div>
+			<div class="col-xs-11 inf">
+				<span class="label label-warning">5</span>
+			</div>
+			<div class="col-xs-8 operation"></div>
+		</div>
+	</dd>
+	<dd class="account-item">
+		<div class="row">
+			<div class="col-xs-5">
+				<label>我的地址 :</label>
+			</div>
+			<div class="col-xs-11 inf">
+				<span class="label label-warning">1</span>
+			</div>
+			<div class="col-xs-8 operation">
+				<a href="">[我的地址浦]</a>
+			</div>
+		</div>
+	</dd>
+	<dd class="account-item">
+		<div class="row">
+			<div class="col-xs-5">
+				<label>最新活动 :</label>
+			</div>
+			<div class="col-xs-11 inf">
+				<span class="label label-danger">推荐优惠码 ZCCDAHTFQ</span>
+			</div>
+			<div class="col-xs-8 operation">
+				<a href="" data-toggle="modal" data-target="#understandInf">[了解详情]</a>
+			</div>
+		</div>
+	</dd>
+	<dd class="account-item">
+		<div class="row">
+			<div class="col-xs-5">
+				<label>我的推荐链接 :</label>
+			</div>
+			<div class="col-xs-11 inf">
+				<span class="label label-danger">http://192.168.1.120:89/registerZCCDAHTFQ.htm</span>
+			</div>
+			<div class="col-xs-8 operation"></div>
+		</div>
+	</dd>
+	<dd class="account-item">
+		<div class="row">
+			<div class="col-xs-5">
+				<label>推荐统计记录 :</label>
+			</div>
+			<div class="col-xs-11 inf">
+				<span class="label label-warning">5</span>
+			</div>
+			<div class="col-xs-8 operation">
+				<a href="">[查看详情]</a>
+			</div>
+		</div>
+	</dd>
+	<dd class="account-item">
+		<div class="row">
+			<div class="col-xs-5">
+				<label>晒单 :</label>
+			</div>
+			<div class="col-xs-11 inf">
+				<span class="label label-warning">5</span>
+			</div>
+			<div class="col-xs-8 operation">
+				<a href="">[晒单操作]</a>
+			</div>
+		</div>
+	</dd>
+	<dd class="account-item">
+		<div class="row">
+			<div class="col-xs-5">
+				<label>优惠券 :</label>
+			</div>
+			<div class="col-xs-11 inf">
+				<span class="label label-warning">5</span>
+			</div>
+		</div>
+		<div class="row coupon">
+			<div class="col-xs-24">
+				<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+					<ul id="myTab" class="nav nav-tabs" role="tablist">
+						<li role="presentation" class="active">
+							<a href="#coupon01" id="coupon01-tab" role="tab" data-toggle="tab" aria-controls="coupon01" aria-expanded="false">
+								可使用优惠券
+								<span class="badge">42</span>
+							</a>
+						</li>
+						<li role="presentation" class="">
+							<a href="#coupon02" role="tab" id="coupon02-tab" data-toggle="tab" aria-controls="coupon02" aria-expanded="false">
+								已使用优惠券
+								<span class="badge">42</span>
+							</a>
+						</li>
+						<li role="presentation" class="">
+							<a href="#coupon03" role="tab" id="coupon03-tab" data-toggle="tab" aria-controls="coupon03" aria-expanded="false">
+								已过期优惠券
+								<span class="badge">42</span>
+							</a>
+						</li>
+					</ul>
+					<div id="myTabContent" class="tab-content">
+						<div role="tabpanel" class="tab-pane fade active in" id="coupon01" aria-labelledby="coupon01-tab">
+							<table class="table table-bordered table-hover">
+								<thead>
+									<tr>
+										<th>优惠券编码</th>
+										<th>优惠券面值</th>
+										<th>优惠券类型</th>
+										<th>获取时间</th>
+										<th>有效期（天）</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>ZCCOU9UYABnCp</td>
+										<td>￥ 20.00</td>
+										<td>满￥ 64.00优惠</td>
+										<td>2015/5/19 22:32:23</td>
+										<td>60</td>
+									</tr>
+									<tr>
+										<td>ZCCOU9UYABnCp</td>
+										<td>￥ 20.00</td>
+										<td>满￥ 64.00优惠</td>
+										<td>2015/5/19 22:32:23</td>
+										<td>60</td>
+									</tr>
+									<tr>
+										<td>ZCCOU9UYABnCp</td>
+										<td>￥ 20.00</td>
+										<td>满￥ 64.00优惠</td>
+										<td>2015/5/19 22:32:23</td>
+										<td>60</td>
+									</tr>
+									<tr>
+										<td>ZCCOU9UYABnCp</td>
+										<td>￥ 20.00</td>
+										<td>满￥ 64.00优惠</td>
+										<td>2015/5/19 22:32:23</td>
+										<td>60</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="coupon02" aria-labelledby="coupon02-tab">
+							<table class="table table-bordered table-hover">
+								<thead>
+									<tr>
+										<th>优惠券编码</th>
+										<th>优惠券面值</th>
+										<th>优惠券类型</th>
+										<th>获取时间</th>
+										<th>有效期（天）</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>ZCCOU9UYABnCp</td>
+										<td>￥ 20.00</td>
+										<td>满￥ 64.00优惠</td>
+										<td>2015/5/19 22:32:23</td>
+										<td>60</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane fade" id="coupon03" aria-labelledby="coupon03-tab">
+							<table class="table table-bordered table-hover">
+								<thead>
+									<tr>
+										<th>优惠券编码</th>
+										<th>优惠券面值</th>
+										<th>优惠券类型</th>
+										<th>获取时间</th>
+										<th>有效期（天）</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>ZCCOU9UYABnCp</td>
+										<td>￥ 20.00</td>
+										<td>满￥ 64.00优惠</td>
+										<td>2015/5/19 22:32:23</td>
+										<td>60</td>
+									</tr>
+									<tr>
+										<td>ZCCOU9UYABnCp</td>
+										<td>￥ 20.00</td>
+										<td>满￥ 64.00优惠</td>
+										<td>2015/5/19 22:32:23</td>
+										<td>60</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</dd>
+</dl>
+</div>
+<!--账户信息-->
+
+
+<script type="text/javascript">
+    seajs.use("../page/new-sea/src/userIndex/userIndex.js")
+</script>
+
+
+{{/block}}
+
